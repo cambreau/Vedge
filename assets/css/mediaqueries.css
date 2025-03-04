@@ -1,0 +1,171 @@
+/* Écran de 1330px et moins---------------------------------------------------------- */
+@media screen and (max-width: 1330px) {
+	/*navigation=================*/
+	nav {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	nav div:first-child {
+		flex-basis: auto;
+		margin-right: 20px;
+		order: 1;
+	}
+	nav a.callToAction {
+		flex-basis: calc(25%);
+		padding: 8px;
+		order: 3;
+	}
+	nav div.sousMenu {
+		flex-basis: calc(50%);
+		order: 4;
+		border-top: 1px #333 solid;
+		margin-top: 10px;
+	}
+	nav form {
+		flex-grow: 2;
+		order: 2;
+	}
+}
+/* Écran de 900px et moins---------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+	blockquote {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	article img {
+		height: 20rem;
+	}
+	/*navigation================*/
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: stretch;
+	}
+	nav>* {
+		border-top: 1px #333 solid;
+	}
+	nav div:first-child {
+		border-top: none;
+	}
+	nav div:first-child a {
+		text-align: center;
+	}
+	nav a.callToAction {
+		background-color: transparent;
+		border-radius: 0;
+		order: 3;
+	}
+	nav a.callToAction:hover {
+		background-color: transparent;
+		color: rgb(131, 167, 107);
+		;
+	}
+	nav div.sousMenu {
+		flex-basis: calc(50%);
+		order: 2;
+		margin-top: 10px;
+	}
+	nav form {
+		display: none;
+	}
+	nav div.sousMenu:hover>div {
+		display: none;
+	}
+	nav div.sousMenu>div:hover {
+		display: block;
+	}
+	/*grille flex general===========================*/
+	body>section>div.container {
+		flex-wrap: wrap;
+		align-items: stretch;
+		align-content: stretch;
+		justify-content: center;
+		gap:20px;
+		
+	}
+	body>section>div.container>div {
+		flex-grow: 1;
+		flex-basis: calc(50% - 20px);
+		
+	}
+
+	/*specifique resto vedette*/
+	.restoContainer {
+		flex-direction: column;
+		justify-content: center;
+	}
+	body>section>div.container>div.resto {
+		order: 2;
+		flex-direction: row;
+		justify-content: space-between;
+		width: calc(100% - 20px);
+	}
+	body>section>div.container>div.resto>div.cartegorie {
+		width: calc(50% - 20px);
+	}
+	body>section>div.container>div.map {
+		order: 1;
+		margin-top: 0;
+		width: calc(100% - 100px);
+	}
+	/*Galerie*/
+	/*variation taille image pour le bien du protoype*/
+	.galerie>div:nth-child(even) {
+		min-width: 150px;
+	}
+	.galerie>div:nth-child(3) {
+		min-width: 300px;
+	}
+	.galerie>div:nth-child(6) {
+		min-width: 425px;
+	}
+	footer>div.container {
+		flex-direction: column-reverse;
+		align-content: center;
+	}
+	footer>div.container>div:first-child {
+		text-align: center;
+	}
+}
+
+/* Écran de 550px et moins---------------------------------------------------------- */
+@media screen and (max-width: 550px) {
+	blockquote {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	/*petit ajustement alignement page resto Val-Jalbert section menu*/
+	.menuResto div a {
+		min-height: 350px;
+	}
+	/*ajustement page resto Val-Jalbert section groupe*/
+	body>section>div.group {
+		flex-direction: column;
+		justify-content: center;
+	}
+	body>section>div.group>div {
+		width: calc(100% - 20px);
+		margin-bottom: 20px;
+	}
+	body>section>div.group div a {
+		margin: 20px 0 0 0;
+		width: calc(100% - 20px);
+		text-align: center;
+	}
+	body>section>div.group>div img {
+		margin: 20px 0 0 0;
+		width: 100%
+	}
+	body>section>div.group>div.map {
+		width: calc(100% - 60px);
+	}
+	/*ajustement page resto Val-Jalbert section temoignage*/
+	body>section>div.temoignage {
+		flex-direction: column;
+	}
+	body>section>div.temoignage>div {
+		width: calc(100% - 20px);
+		text-align: center;
+	}
+}

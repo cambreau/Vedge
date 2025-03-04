@@ -1,0 +1,49 @@
+/* Nous avons choisi de remplacer cette partie par des variables CSS. Le but étant que si on souhaite changer une des variables, la totalité du site se met à jour. */
+
+/* Gouttière et rythme de base  */
+/* AVANT*/
+/*
+	Gouttière et rythme de base
+		20px
+
+	Rythme serré
+		20px
+
+	Rythme serré
+		40px
+
+	Rythme espacé
+		80px
+
+	Largeur maximale des sections principales
+		100rem
+	
+*/
+
+/* APRES */
+:root {
+	--gouttiere: 20px;
+	--rythme-base: 20px;
+	--rythme-tres-sere: 20px;
+	--rythme-serre: 40px;
+	--rythme-espace: 80px;
+	--largeur-max: 100rem;
+}
+
+/* Couleurs */
+/* AVANT */
+/*
+	Couleur lien de type call to Action pour le prototype
+	rouge = #572e2e;
+	vert = rgb(131, 167, 107); // hover
+	
+*/
+
+/* APRES */
+:root {
+	--couleur-background: #fffbf7;
+	--couleur-texte: #2D3313;
+	--couleur-primaire: #84a76c;
+	--couleur-secondaire: #AF5265;
+	--couleur-tertiaire: #FF8E4B;
+	}
