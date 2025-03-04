@@ -6,11 +6,12 @@
 		* {
 			margin: 0;
 			padding: 0;
+			color: var(--couleur-texte);
 		}
 	
 		/* Rythme vertical de base 
 			pour tous les éléments de contenu */
-		*+p, *+img, *+a, *+small,
+		*+p, *+img, *+a, *+small
 		*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 { 
 			margin-top: 20px; 
 		}
@@ -74,7 +75,7 @@
 	
 		a:hover, input[type=submit]:hover, button:hover {
 			background:  var(--couleur-tertiaire);
-			color:#fff;
+			color:var(--couleur-background);
 		  }
 	
 		input[type=submit]{
@@ -227,7 +228,7 @@
 		  }
 		  
 		nav a:hover {
-			color:var(--couleur-tertiaire);
+			color:var(--couleur-texte);
 			background: none;
 		}
 	
@@ -239,7 +240,7 @@
 		}
 
 		nav a.callToAction:hover {
-			background:  var(--couleur-primaire);
+			background:  var(--couleur-tertiaire);
 			color:var(--couleur-background)
 		}
 	
@@ -256,7 +257,7 @@
 	
 		div a:hover span{
 			font-weight: 700;
-			color:rgb(131, 167, 107);
+			color:var(--couleur-tertiaire);
 		}
 
 		nav div:first-child{
@@ -288,7 +289,7 @@
 			width: 100%;
 			top:2em; /*position du menu pour arriver en bas du lien parent*/
 			left:0;
-			background-color: #222;
+			background-color: var(--couleur-primaire);
 		  }
 		  
 		  nav div.sousMenu:hover > div {
@@ -352,7 +353,7 @@
 		/*lien categorie item grille*/
 		.cartegorie a {
 			background: none;
-			border: 1px solid #ccc;
+			border: 1px solid var(--couleur-texte);
 			padding:20px;
 			width: 100%;
 			box-sizing: border-box;
@@ -360,18 +361,19 @@
 		}
 	
 		.cartegorie a h4{
-			color:#666;
+			color:var(--couleur-primaire);
 			padding:0;
 		}
 	
 		.cartegorie a:hover {
 			background: none;
-			/*box-shadow: rgb(131, 167, 107) 0px 5px 15px;*/
+			border: var(--couleur-secondaire) solid 2px;
+			/*Ajout d'une bordure sur le survol afin de remplacer le boz-shadow*/
 			
 		}
 	
 		.cartegorie a:hover h4{
-			color:rgb(131, 167, 107);
+			color:var(--couleur-secondaire);
 		}
 	
 	
@@ -431,7 +433,7 @@
 	
 	/*Zone trouver un resto*/	
 		.map{
-			background-color: rgba(0,0,0,1);
+			background-color: var(--couleur-primaire);
 			padding:20px;
 			color:#fff;
 			margin-top:-20px;/*pour coller la division sur la section*/
@@ -565,10 +567,10 @@
 	
 	/* Pied de page ===================================================================== */
 	
-		footer{
+		body>footer{
 			margin:60px 0 0 0;
-			color:#fff;
-			background-color: #222;
+			color:var(--couleur-background);
+			background-color: var(--couleur-primaire);
 		}
 		
 		
@@ -606,7 +608,7 @@
 			margin:0 20px 0 0;
 			line-height: 2em;;
 			background: none;
-			color:#fff;
+			color:var(--couleur-background);
 		}
 		
 		footer a.callToAction {
@@ -623,10 +625,10 @@
 		
 		/*copyright*/
 		footer div.copyright{
-			background: #000;
+			background: var(--couleur-texte);
 			padding:20px 0;
 		}
 		footer div.copyright p{
-			color:#fff;
+			color:var(--couleur-background);
 			text-align: center;
 		}
