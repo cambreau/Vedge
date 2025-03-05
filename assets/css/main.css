@@ -216,7 +216,7 @@
 			width: 100%;
 			text-align: center;
 			background: none;
-			color:var(--couleur-background);
+			color:var(--ccouleur-background);
 			padding: 5px;
 			position: relative;
 			margin: 0 ;
@@ -228,12 +228,12 @@
 		  }
 		  
 		nav a:hover {
-			color:var(--couleur-texte);
 			background: none;
 		}
 	
 		nav a.callToAction {
 			background: var(--couleur-secondaire);
+			color: var(--couleur-background);
 			margin: 0 1em 0 0;
 			border-radius: 8px;
 			padding:10px ;
@@ -290,6 +290,9 @@
 			top:2em; /*position du menu pour arriver en bas du lien parent*/
 			left:0;
 			background-color: var(--couleur-primaire);
+			border-radius: 20px;
+			border: 2px solid #000;
+			border-top: none; /* Supprime la bordure du haut */
 		  }
 		  
 		  nav div.sousMenu:hover > div {
