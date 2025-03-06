@@ -1,0 +1,25 @@
+*** Les maquettes contiennent-elles du vrai texte et/ou du « lorem ipsum » ?
+    R - Vrai texte.
+*** Les effets interactifs, les transitions et/ou animations sont-ils conçus ?
+    R - Oui dans la majorite.
+    Ajustement : ++++++++++++++++++++++++
+*** Est ce que les éléments interactifs (boutons, champs, liens, etc.) présentent des styles pour chacun de leurs états ?
+    R - Oui, a ajuster selon les couleurs de la maquette.
+*** Y a-t-il d’autres éléments (des fonctionnalités, par exemple) dont certains styles manqueraient ?
+*** Est-ce que la quantité de ressources externes (images, polices, vidéo, etc.) est raisonnable ?
+    R - Le nombre d emplacement est raisonnable. Nous devons selectionner les photos et les ajuster de la maniere la plus optimiser.
+    ++++++++++++++++++++++++++  
+*** Manque-t-il des contenus ou des informations ?
+    R - Peut-etre les logos des reseaux sociaux et le iframe MAP.
+*** Avons-nous plusieurs variantes des maquettes qui soient adaptées aux différents appareils populaires (téléphone, tablette, portable, bureau, etc.) ?
++++++++++++++++++++++++
+*** Est-ce que la composition peut occuper en tout temps l’entièreté de la fenêtre ou devra-t-on en limiter la largeur ?
++++++++++++++++++++
+*** La maquette semble-t-elle accessible ?
+*** Y a-t-il une grille claire sous les compositions présentées dans les maquettes ?
+*** Y a-t-il des aspects de la communication graphique nous semblant inadéquats ?
+Des espacements trop ou pas assez grands ?
+Des lignes de texte trop ou pas assez larges ?
+Des alignements croches ?
+D’autres entorses aux principes de la communication graphique ?
+
