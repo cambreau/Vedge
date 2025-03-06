@@ -23,3 +23,16 @@ Des lignes de texte trop ou pas assez larges ?
 Des alignements croches ?
 D’autres entorses aux principes de la communication graphique ?
 
+Problematique :
+- Les class sont parfois en francais et parfois en anglais. Cependant, il est recommande d'utiliser une seule langue.
+- Le header contient generalement la navigation principale. Ici, nav est place a l exterieur du header avant meme ce dernier.
+Cela ne respecte pas les bonnes pratiques.
+https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
+- Structure HTML :
+    * Afin de respecter les conventions courantes et rendre le code plus clair, on a choisi d'inclure le nav de la navigation principale dans le header.
+    * Ajout de la balise Main afin de respecter la semantique.
+
+    
+
+
+
