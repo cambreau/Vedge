@@ -24,15 +24,26 @@ Des alignements croches ?
 D’autres entorses aux principes de la communication graphique ?
 
 Problematique :
+--- HTML ---
+- Il faut remplacer le commentaire du logo par un logo.
 - Les class sont parfois en francais et parfois en anglais. Cependant, il est recommande d'utiliser une seule langue.
 - Le header contient generalement la navigation principale. Ici, nav est place a l exterieur du header avant meme ce dernier.
 Cela ne respecte pas les bonnes pratiques.
+- Ce qui est inclut dans le header devrait etre dans un section ddans le main ?
 https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
-- Structure HTML :
-    * Afin de respecter les conventions courantes et rendre le code plus clair, on a choisi d'inclure le nav de la navigation principale dans le header.
-    * Ajout de la balise Main afin de respecter la semantique.
+- Manque de la balise MAIN => Probleme de semantique
+- Probleme de semantique au niveau de la succession des titres lignes 53.
+-  les div class= categorie devrait etre des sections pour la semantique.
+- parfois des titres sont utilises alors que ca devrait etre des paragraphe
+- Beaucoup de fautes d orthographe
+CSS :
+- Pas de variables CSS
+- pas de coherence visuelle dans les padding et margin
 
     
+- Demander les meta importantes a M-a 
+- Demander pour le header et le nav
+- Demander pour le flex ou grid    
 
 
 
