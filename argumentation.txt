@@ -23,26 +23,46 @@ Des lignes de texte trop ou pas assez larges ?
 Des alignements croches ?
 D’autres entorses aux principes de la communication graphique ?
 
-Problematique :
---- HTML ---
-- Il faut remplacer le commentaire du logo par un logo.
+
+--- Etape 1: HTML ---
+*Problematique :
 - Les class sont parfois en francais et parfois en anglais. Cependant, il est recommande d'utiliser une seule langue.
-- Le header contient generalement la navigation principale. Ici, nav est place a l exterieur du header avant meme ce dernier.
-Cela ne respecte pas les bonnes pratiques.
-- Ce qui est inclut dans le header devrait etre dans un section ddans le main ?
+- Aucun semantique
+- Le header contient generalement la navigation principale meme si ce n'est pas une obligation. 
 https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
-- Manque de la balise MAIN => Probleme de semantique
-- Probleme de semantique au niveau de la succession des titres lignes 53.
--  les div class= categorie devrait etre des sections pour la semantique.
-- parfois des titres sont utilises alors que ca devrait etre des paragraphe
+Le header, contient pas les bonnes informations, selon notre opinion.
 - Beaucoup de fautes d orthographe
-CSS :
+*Plan d'action :
+✅ Il faut remplacer le commentaire du logo par un logo.ico.
+V   Correction des class (francais).
+V   Remplacer les div par des balises semantique.
+V   Reorganisation du header principal. 
+V   Correction des fautes d'orthographe.
+✅  Ajout des meta description et keywords
+
+--- Etape 2: CSS ---
+*Problematique :
 - Pas de variables CSS
 - pas de coherence visuelle dans les padding et margin
+*Plan d'action :
 
+/* Marges de sécurité de base */ /****LOUBNA JE SOUHAITE SUPPRIMER CETTE MARGE. ELLE EST TROP LARGE EST IMPLIQUE DE METTRE MARGIN 0 PLUS LOIN
+		/* body>* {
+			margin: var(--rythme-base);
+		}
+	 */
     
-- Demander les meta importantes a M-a 
-- Demander pour le header et le nav
+
+blockquote {  /** LOUBNA je ne trouve pas cette balise donc a supprimer
+  font-style: italic;
+  margin-right: var(--rythme-espace);
+  color: #666;
+  font-size: 1.1em;
+  line-height: 2.25em;
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 60ch;
+}
+
 - Demander pour le flex ou grid    
 
 

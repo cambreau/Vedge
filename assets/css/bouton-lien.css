@@ -1,0 +1,46 @@
+/* *Tous* liens sont de type bouton*/
+a {
+  display: inline-block;
+}
+
+a,
+input[type="submit"],
+button {
+  padding: var(--rythme-tres-serre);
+  background: var(--couleur-secondaire);
+  color: var(--couleur-background);
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transition-duration: 100ms;
+}
+
+a:hover,
+input[type="submit"]:hover,
+button:hover {
+  background: var(--couleur-tertiaire);
+  color: var(--couleur-background);
+}
+
+input[type="submit"] {
+  display: block;
+  margin: var(--rythme-base) 0;
+  padding: var(--rythme-base);
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}
+
+input[type="search"],
+input[type="text"] {
+  width: 100%;
+  padding: var(--rythme-serre) var(--rythme-base);
+  margin: var(--rythme-base) 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
