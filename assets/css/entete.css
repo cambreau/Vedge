@@ -1,0 +1,65 @@
+/*Header*/
+body > header {
+  display: flex;
+  background-color: var(--couleur-primaire);
+  align-items: center;
+  padding: var(--rythme-espace) var(--rythme-base);
+  gap: var(--rythme-tres-espace);
+}
+/* Repartition des elements du header */
+header > nav {
+  flex-grow: 1;
+}
+
+/* Règle générale menu principal --------------------------------------------------------*/
+header > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header > nav > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-espace);
+}
+
+.entete-action {
+  flex-grow: 1;
+  justify-content: end;
+}
+
+header > nav a {
+  text-transform: uppercase;
+  font-weight: var(--epaisseur-police-gras);
+  align-content: center;
+}
+
+header > nav a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------ */
+/*Sous-menu* ?????? corriger alignement*/
+.sousMenu {
+  position: relative;
+}
+
+nav div.sousMenu > div {
+  display: none;
+  position: absolute;
+  padding: var(--rythme-base);
+  left: -20%;
+  top: 100%; /*position du menu pour arriver en bas du lien parent*/
+  background-color: var(--couleur-primaire);
+}
+
+nav div.sousMenu:hover > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rythme-serre);
+}
+
+nav div.sousMenu div a {
+  text-align: start;
+}

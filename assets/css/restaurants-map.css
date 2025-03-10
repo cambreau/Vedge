@@ -1,0 +1,23 @@
+.restaurants-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants-map h2 {
+  margin-bottom: 0;
+}
+
+.conteneur-restaurant-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--rythme-base);
+}
+
+.map {
+  background-color: var(--couleur-primaire);
+  padding: var(--rythme-base) var(--rythme-espace);
+}
+
+.map h4 {
+}

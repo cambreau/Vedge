@@ -1,0 +1,32 @@
+/* Choix d'un fichier spécifique pour le titre et le logo
+car ce componsant est utilise a plusieurs endroits dans le site. */
+
+/*Titre principal & Logo */
+.titreLogo {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--couleur-primaire);
+  align-items: center;
+  gap: var(--rythme-serre);
+}
+
+.titreLogo img {
+  width: 100px;
+}
+
+.titreLogo h1 {
+  font-size: var(--taille-police-gros);
+  font-weight: var(--epaisseur-police-gras);
+  line-height: var(--interligne-logo);
+  text-transform: uppercase;
+  transition: all;
+}
+
+.titreLogo:hover {
+  background-color: var(--couleur-primaire);
+}
+
+.titreLogo:hover h1 {
+  font-weight: var(--epaisseur-police-tres-gras);
+  text-decoration: underline;
+}

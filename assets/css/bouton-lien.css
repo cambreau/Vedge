@@ -1,46 +1,60 @@
-/* *Tous* liens sont de type bouton*/
-a {
-  display: inline-block;
+/*------------------------------------------------------------------------------ */
+/* Bouton et barre recherche */
+.recherche {
+  /*????? HELP je n'arrive pas a le centrrer */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: var(--rythme-tres-serre);
+}
+.recherche-barre {
+  display: flex; /*????? Y a t il un moyen de mettre en ligne sans flex. */
 }
 
-a,
-input[type="submit"],
-button {
+.recherche-barre > input[type="text"] {
+  width: 200px;
   padding: var(--rythme-tres-serre);
-  background: var(--couleur-secondaire);
-  color: var(--couleur-background);
-  text-decoration: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  transition-duration: 100ms;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 4px 0 0 4px;
 }
 
-a:hover,
-input[type="submit"]:hover,
-button:hover {
-  background: var(--couleur-tertiaire);
-  color: var(--couleur-background);
-}
-
-input[type="submit"] {
-  display: block;
-  margin: var(--rythme-base) 0;
-  padding: var(--rythme-base);
-  box-sizing: border-box;
-  text-decoration: none;
+.recherche-barre > input[type="submit"],
+.recherche-barre > button {
   text-transform: uppercase;
-  font-weight: 600;
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-background);
+  font-weight: var(--epaisseur-police-gras);
+  border-radius: 0 4px 4px 0;
+  padding: var(--rythme-tres-serre) var(--rythme-base);
   border: none;
 }
 
-input[type="search"],
-input[type="text"] {
-  width: 100%;
-  padding: var(--rythme-serre) var(--rythme-base);
-  margin: var(--rythme-base) 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.recherche-barre > input[type="submit"]:hover,
+.recherche-barre > button:hover {
+  color: var(--couleur-texte);
+}
+/*------------------------------------------------------------------------------ */
+/* Bouton Appel à l'action */
+.appelAction {
+  border-radius: 8px;
+  text-align: center;
+  font-weight: var(--epaisseur-police-gras);
+}
+.appelAction:hover {
+  background: var(--couleur-secondaire);
+  color: var(--couleur-texte);
+  text-decoration: none;
+}
+
+.principal {
+  background: var(--couleur-background);
+  color: var(--couleur-texte);
+  border: thick double var(--couleur-secondaire);
+  font-size: var(--taille-police-petit);
+  padding: var(--rythme-serre);
+}
+
+.secondaire {
+  background: var(--couleur-primaire);
+  padding: var(--rythme-base);
 }

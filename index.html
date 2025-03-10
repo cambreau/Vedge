@@ -9,13 +9,12 @@
       content="restaurant, végane, végétalien, végétarien, vedge"
     />
     <meta name="author" content="Vedge" />
-    <link rel="shortcut icon" href="logo-vedge.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="assets/css/general.css" />
     <title>Vedge : Restaurant Végane</title>
   </head>
   <body>
@@ -23,204 +22,193 @@
     <header>
       <a class="titreLogo" href="index.html"
         ><img
-          src="assets/image/logo-vedge.svg"
+          src="assets/image/logo-vedge.png"
           alt="Logo du restaurant Vedge"
         />
         <h1>Vedge</h1></a
       >
       <nav>
-        <div class="sousMenu">
-          <a href="#">Restaurants</a>
-          <div>
-            <a href="#">Trois-Rivières</a>
-            <a href="#">Drummondville</a>
-            <a href="resto-valjalbert.html">Val-Jalbert</a>
-            <a href="#">Dix30</a>
-            <a href="#">Toronto</a>
-            <a href="#">Berlin</a>
+        <div class="menu-principal">
+          <div class="sousMenu">
+            <a href="#">Restaurants</a>
+            <div>
+              <a href="#">Trois-Rivières</a>
+              <a href="#">Drummondville</a>
+              <a href="resto-valjalbert.html">Val-Jalbert</a>
+              <a href="#">Dix30</a>
+              <a href="#">Toronto</a>
+              <a href="#">Berlin</a>
+            </div>
+          </div>
+          <div class="sousMenu">
+            <a href="#">Menu</a>
+            <div>
+              <a href="#">Brunch</a>
+              <a href="#">Dîner</a>
+              <a href="#">Souper</a>
+              <a href="#">Boisson</a>
+            </div>
           </div>
         </div>
-        <div class="sousMenu">
-          <a href="#">Menu</a>
-          <div>
-            <a href="#">Brunch</a>
-            <a href="#">Dîner</a>
-            <a href="#">Souper</a>
-            <a href="#">Boisson</a>
-          </div>
+        <div class="entete-action">
+          <a class="appelAction principal" href="#">Faire une réservation</a>
+          <a class="appelAction principal" href="#">Commander en ligne</a>
+          <form class="recherche">
+            <label for="recherche">Trouver un restaurant</label>
+            <div class="recherche-barre">
+              <input
+                type="text"
+                id="recherche"
+                placeholder="Entrez votre code postal"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
         </div>
-        <a class="appelAction" href="#">Faire une réservation</a>
-        <a class="appelAction" href="#">Commander en ligne</a>
-        <form class="formNav">
-          <label for="recherche">Trouver un restaurant</label>
-          <input
-            type="text"
-            id="recherche"
-            placeholder="Entrez votre code postal"
-          />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
       </nav>
     </header>
     <main>
       <!-- section 1 : Photo d'accueil==================================================================-->
-      <section class="bgImg">
+      <section
+        class="article-fond-image article-principal"
+        id="accueil-principal"
+      >
         <header>
           <h2>Restaurant Végane</h2>
         </header>
         <span>Botanique et décadente</span>
-        <p>Savourez les meilleurs plats dans le respect de la nature</p>
-        <a href="#">Découvrez notre menu</a>
+        <p>Savourez les meilleurs plats dans le respect de la nature.</p>
+        <a class="appelAction secondaire" href="#">Découvrez notre menu</a>
       </section>
-      <!-- section 2 :(monajout) categorie de menu ======================================================-->
+      <!-- section 2 : categorie de menu ======================================================-->
       <section>
         <header>
           <h2>Menu</h2>
         </header>
-        <div class="conteneur">
-          <section class="categorie">
-            <header>
+        <div class="conteneur-cartes-simple">
+          <section class="carte-simple">
+            <a href="#">
+              <img src="assets/image/brunch.jpg" alt="Image" />
               <h3>Brunch</h3>
-            </header>
-            <a href="#">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt="Image"
-              />
             </a>
           </section>
-          <section class="categorie">
-            <header>
+          <section class="carte-simple">
+            <a href="#">
+              <img src="assets/image/diner.jpg" alt="Image" />
               <h3>Dîner</h3>
-            </header>
-            <a href="#">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt="Image"
-              />
             </a>
           </section>
-          <section class="categorie">
-            <header>
+          <section class="carte-simple">
+            <a href="#">
+              <img src="assets/image/souper.jpg" alt="Image" />
               <h3>Souper</h3>
-            </header>
-            <a href="#">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt="Image"
-              />
             </a>
           </section>
-          <section class="categorie">
+          <section class="carte-simple">
             <a href="#">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt="Image"
-              />
-              <h4>Boisson</h4>
+              <img src="assets/image/boisson.jpg" alt="Image" />
+              <h3>Boisson</h3>
             </a>
           </section>
         </div>
       </section>
       <!-- section 3 : promotion =========================================================================-->
-      <section class="bgImg">
+      <section
+        class="article-fond-image article-secondaire"
+        id="acceuil-promotion"
+      >
         <header>
           <h2>Profitez de nos promotions</h2>
         </header>
         <p>Deux mimosas pour 15$ pendant toute l'heure du brunch</p>
-        <a href="#">Voir nos promotions</a>
+        <a class="appelAction secondaire" href="#">Voir nos promotions</a>
       </section>
       <!-- section 4 : Restaurant vedette =================================================================-->
-      <section>
+      <section class="restaurants-map">
         <header>
           <h2>Restaurants en vedette</h2>
         </header>
-        <div class="conteneur">
-          <div class="conteneur-restaurants">
-            <section class="categorie">
-              <header>
-                <h4>Trois-Rivières</h4>
-              </header>
+        <div class="conteneur-restaurant-map">
+          <section class="conteneur-cartes-simple">
+            <section class="carte-simple">
+              <h3>Trois-Rivières</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/trois-rivieres.jpg"
+                  alt="Restaurant Vedge à Trois-Rivières"
                 />
               </a>
             </section>
-            <section class="categorie">
-              <header>
-                <h4>Drummondville</h4>
-              </header>
+            <section class="carte-simple">
+              <h3>Drummondville</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/drummondville.jpg"
+                  alt="Restaurant Vedge à Drummondville"
                 />
               </a>
             </section>
-            <section class="categorie">
-              <header>
-                <h4>Val-Jalbert</h4>
-              </header>
+            <section class="carte-simple">
+              <h3>Val-Jalbert</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/val-jalbert.jpg"
+                  alt="Restaurant Vedge à Val-Jalbert"
                 />
               </a>
             </section>
-            <section class="categorie">
-              <header>
-                <h4>Dix30</h4>
-              </header>
+            <section class="carte-simple">
+              <h3>Dix30</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/dix30.jpg"
+                  alt="Restaurant Vedge au Dix30"
                 />
               </a>
             </section>
-            <section class="categorie">
-              <header>
-                <h4>Toronto</h4>
-              </header>
+            <section class="carte-simple">
+              <h3>Toronto</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/toronto.jpg"
+                  alt="Restaurant Vedge à Toronto"
                 />
               </a>
             </section>
-            <section class="categorie">
-              <header>
-                <h4>Berlin</h4>
-              </header>
+            <section class="carte-simple">
+              <h3>Berlin</h3>
               <a href="#">
                 <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  alt="Image"
+                  src="./assets/image/berlin.jpg"
+                  alt="Restaurant Vedge à Berlin"
                 />
               </a>
             </section>
-          </div>
-          <section class="carte">
+          </section>
+          <section class="map">
             <header>
-              <h2>Trouvez un restaurant "Vedge" près de chez vous</h2>
+              <h4>Trouvez un restaurant "Vedge" près de chez vous.</h4>
             </header>
             <p>Entrez votre ville ou votre code postal</p>
-            <form>
+            <form class="recherche">
               <input
                 type="search"
                 placeholder="Entrez votre ville ou votre code postal"
               />
-              <input type="submit" value="Trouvez" />
+              <input
+                class="appelAction principal"
+                type="submit"
+                value="Trouver"
+              />
             </form>
           </section>
         </div>
       </section>
       <!-- section 5 : initation franchise ==============================================-->
-      <section class="bgImg">
+      <section
+        class="article-fond-image article-secondaire"
+        id="votre-restaurant"
+      >
         <header>
           <h2>Vous voulez établir votre propre restaurant?</h2>
         </header>
@@ -228,30 +216,34 @@
           Laissez-nous vous convaincre de développer votre propre franchise
           "Vedge"
         </p>
-        <a href="#">Contactez-nous</a>
+        <a class="appelAction secondaire" href="#">Contactez-nous</a>
       </section>
     </main>
     <!-- FOOTER ========================================================================-->
     <footer>
-      <div class="conteneur">
+      <div class="bas-page-conteneur">
         <section>
-          <header>
-            <h3>Heure d'ouverture</h3>
-          </header>
+          <h3>Heure d'ouverture</h3>
           <p>Lundi à Mercredi 11:30 - 22:00</p>
           <p>Jeudi à Samedi 11:30 - 23:00</p>
           <p>Dimanche : 10:00 - 22:00</p>
         </section>
         <nav>
-          <a href="index.html"><span>Vedge</span></a>
+          <a class="titreLogo" href="index.html"
+            ><img
+              src="assets/image/logo-vedge.png"
+              alt="Logo du restaurant Vedge"
+            />
+            <h1>Vedge</h1></a
+          >
           <a href="philisophie.html">Notre philosophie</a>
           <a href="#">Carrières</a>
           <a href="#">Franchises</a>
           <a href="#">Presse</a>
           <a href="#">Contactez-nous</a>
           <div>
-            <a class="callToAction" href="#">Réservez une table</a>
-            <a class="callToAction" href="#">Commandez en ligne</a>
+            <a class="appelAction principal" href="#">Réservez une table</a>
+            <a class="appelAction principal" href="#">Commandez en ligne</a>
           </div>
         </nav>
       </div>

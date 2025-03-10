@@ -1,0 +1,67 @@
+@import url("bouton-lien.css");
+@import url("titre-logo.css");
+@import url("entete.css");
+@import url("carte.css");
+@import url("restaurants-map.css");
+@import url("fond-image.css");
+@import url("footer.css");
+/* Variables CSS -----------------------  ==== ref = M.Charpentier*/
+:root {
+  /* --- Espacement --- */
+  --rythme-tres-serre: 5px;
+  --rythme-serre: 10px;
+  --rythme-base: 20px;
+  --rythme-espace: 40px;
+  --rythme-tres-espace: 80px;
+  /* --- Couleurs --- */
+  --couleur-background: #fffbf7;
+  --couleur-texte: #252b0c;
+  --couleur-primaire: #99c07f;
+  --couleur-secondaire: #e5be7c;
+  --couleur-bordure: #ccc;
+  /* --- Interligne --- */
+  --interligne-base: 1.5625em;
+  --interligne-logo: 1.78em;
+  /* --- Taille de police --- */
+  --taille-police-petit: 0.9em;
+  --taille-police-normal: 1em;
+  --taille-police-grand: 1.5em;
+  --taille-police-gros: 2em;
+  /* --- Epaisseur de police --- */
+  --epaisseur-police-normale: 400;
+  --epaisseur-police-gras: 500;
+  --epaisseur-police-tres-gras: 700;
+}
+
+/* Règles génériques -----------------------  ==== ref = M.Charpentier*/
+
+/* Rétablir les marges intérieures & extérieures sur tout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base typographique à être héritée ==== ref = M.Charpentier*/
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: var(--interligne-base);
+  color: var(--couleur-texte);
+}
+
+a {
+  text-decoration: none;
+  color: var(--couleur-texte);
+}
+
+/* Intervention graphique séparant clairement les titres du contenu les suivant */
+h2 {
+  border-bottom: 1px solid var(--couleur-secondaire);
+  padding-bottom: var(--rythme-serre);
+  margin-bottom: var(--rythme-base);
+}
+
+main > section {
+  margin: var(--rythme-espace);
+}
