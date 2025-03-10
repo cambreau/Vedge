@@ -1,0 +1,16 @@
+body > footer {
+  padding: var(--rythme-serre) var(--rythme-espace);
+  background-color: var(--couleur-primaire);
+}
+
+.bas-page-conteneur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: var(--gouttiere);
+}
+
+.footer > nav {
+  flex-grow: 1;
+}

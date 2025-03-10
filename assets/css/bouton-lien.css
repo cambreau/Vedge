@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------------ */
+/* Bouton et barre recherche */
+.recherche {
+  /*????? HELP je n'arrive pas a le centrrer */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  gap: var(--rythme-tres-serre);
+}
+.recherche-barre {
+  display: flex; /*????? Y a t il un moyen de mettre en ligne sans flex. */
+}
+
+.recherche-barre > input[type="text"] {
+  width: 200px;
+  padding: var(--rythme-tres-serre);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 4px 0 0 4px;
+}
+
+.recherche-barre > input[type="submit"],
+.recherche-barre > button {
+  text-transform: uppercase;
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-background);
+  font-weight: var(--epaisseur-police-gras);
+  border-radius: 0 4px 4px 0;
+  padding: var(--rythme-tres-serre) var(--rythme-base);
+  border: none;
+}
+
+.recherche-barre > input[type="submit"]:hover,
+.recherche-barre > button:hover {
+  color: var(--couleur-texte);
+}
+/*------------------------------------------------------------------------------ */
+/* Bouton Appel à l'action */
+.appelAction {
+  border-radius: 8px;
+  text-align: center;
+  font-weight: var(--epaisseur-police-gras);
+}
+.appelAction:hover {
+  background: var(--couleur-secondaire);
+  color: var(--couleur-texte);
+  text-decoration: none;
+}
+
+.principal {
+  background: var(--couleur-background);
+  color: var(--couleur-texte);
+  border: thick double var(--couleur-secondaire);
+  font-size: var(--taille-police-petit);
+  padding: var(--rythme-serre);
+}
+
+.secondaire {
+  background: var(--couleur-primaire);
+  padding: var(--rythme-base);
+}

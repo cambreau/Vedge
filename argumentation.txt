@@ -1,0 +1,69 @@
+*** Les maquettes contiennent-elles du vrai texte et/ou du « lorem ipsum » ?
+    R - Vrai texte.
+*** Les effets interactifs, les transitions et/ou animations sont-ils conçus ?
+    R - Oui dans la majorite.
+    Ajustement : ++++++++++++++++++++++++
+*** Est ce que les éléments interactifs (boutons, champs, liens, etc.) présentent des styles pour chacun de leurs états ?
+    R - Oui, a ajuster selon les couleurs de la maquette.
+*** Y a-t-il d’autres éléments (des fonctionnalités, par exemple) dont certains styles manqueraient ?
+*** Est-ce que la quantité de ressources externes (images, polices, vidéo, etc.) est raisonnable ?
+    R - Le nombre d emplacement est raisonnable. Nous devons selectionner les photos et les ajuster de la maniere la plus optimiser.
+    ++++++++++++++++++++++++++  
+*** Manque-t-il des contenus ou des informations ?
+    R - Peut-etre les logos des reseaux sociaux et le iframe MAP.
+*** Avons-nous plusieurs variantes des maquettes qui soient adaptées aux différents appareils populaires (téléphone, tablette, portable, bureau, etc.) ?
++++++++++++++++++++++++
+*** Est-ce que la composition peut occuper en tout temps l’entièreté de la fenêtre ou devra-t-on en limiter la largeur ?
++++++++++++++++++++
+*** La maquette semble-t-elle accessible ?
+*** Y a-t-il une grille claire sous les compositions présentées dans les maquettes ?
+*** Y a-t-il des aspects de la communication graphique nous semblant inadéquats ?
+Des espacements trop ou pas assez grands ?
+Des lignes de texte trop ou pas assez larges ?
+Des alignements croches ?
+D’autres entorses aux principes de la communication graphique ?
+
+
+--- Etape 1: HTML ---
+*Problematique :
+- Les class sont parfois en francais et parfois en anglais. Cependant, il est recommande d'utiliser une seule langue.
+- Aucun semantique
+- Le header contient generalement la navigation principale meme si ce n'est pas une obligation. 
+https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
+Le header, contient pas les bonnes informations, selon notre opinion.
+- Beaucoup de fautes d orthographe
+*Plan d'action :
+✅ Il faut remplacer le commentaire du logo par un logo.ico.
+V   Correction des class (francais).
+V   Remplacer les div par des balises semantique.
+V   Reorganisation du header principal. 
+V   Correction des fautes d'orthographe.
+✅  Ajout des meta description et keywords
+
+--- Etape 2: CSS ---
+*Problematique :
+- Pas de variables CSS
+- pas de coherence visuelle dans les padding et margin
+*Plan d'action :
+
+/* Marges de sécurité de base */ /****LOUBNA JE SOUHAITE SUPPRIMER CETTE MARGE. ELLE EST TROP LARGE EST IMPLIQUE DE METTRE MARGIN 0 PLUS LOIN
+		/* body>* {
+			margin: var(--rythme-base);
+		}
+	 */
+    
+
+blockquote {  /** LOUBNA je ne trouve pas cette balise donc a supprimer
+  font-style: italic;
+  margin-right: var(--rythme-espace);
+  color: #666;
+  font-size: 1.1em;
+  line-height: 2.25em;
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 60ch;
+}
+
+- Demander pour le flex ou grid    
+
+
+
