@@ -40,7 +40,7 @@ header > nav a:hover {
 }
 
 /*------------------------------------------------------------------------------ */
-/*Sous-menu* ?????? corriger alignement*/
+/*Sous-menu* ?????? corriger alignement*/   /* regarde est ce que c'est mieux comme ca ?*/
 .sousMenu {
   position: relative;
 }
@@ -49,17 +49,21 @@ nav div.sousMenu > div {
   display: none;
   position: absolute;
   padding: var(--rythme-base);
-  left: -20%;
+  left: 55%;
+  transform: translateX(-55%);
   top: 100%; /*position du menu pour arriver en bas du lien parent*/
   background-color: var(--couleur-primaire);
+  border-radius: 20px;
+	border: 2px solid #000;
+	border-top: none; /* Supprime la bordure du haut */
 }
 
 nav div.sousMenu:hover > div {
   display: flex;
   flex-direction: column;
-  gap: var(--rythme-serre);
 }
 
 nav div.sousMenu div a {
   text-align: start;
+  padding: var(--rythme-serre); 
 }

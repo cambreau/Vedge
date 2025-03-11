@@ -24,17 +24,17 @@
 
 /* Publication principale - Accueil */
 [id="accueil-principal"] {
-  background-image: url("../image/accueil.jpg");
+  background-image: url("../image/accueil.png");
 }
 
 /* Publication promotion - Accueil */
 [id="acceuil-promotion"] {
-  background-image: url("../image/promotion-2.jpg");
+  background-image: url("../image/promotion-1.png");
 }
 
 /* Publication votre restaurant - Accueil */
 [id="votre-restaurant"] {
-  background-image: url("../image/votre-restaurant.jpg");
+  background-image: url("../image/votre-restaurant.png");
   color: white;
   text-align: center;
 }
