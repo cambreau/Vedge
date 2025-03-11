@@ -1,0 +1,24 @@
+body > footer {
+  padding: var(--rythme-serre) var(--rythme-espace);
+  background-color: var(--couleur-primaire);
+}
+
+.bas-page-conteneur {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: var(--rythme-base);
+}
+
+.footer > nav {
+  flex-grow: 1;
+}
+
+/*droits-reserves*/
+.droits-reserves {
+  background: var(--couleur-texte);
+  color: var(--couleur-background);
+  text-align: center;
+}

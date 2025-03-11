@@ -1,0 +1,26 @@
+.conteneur-cartes-simple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rythme-espace);
+  margin: var(--rythme-base);
+}
+
+.carte-simple {
+  padding: var(--rythme-base);
+  border: solid 1px var(--couleur-bordure);
+  border-radius: 8px;
+}
+
+.carte-simple:hover {
+  border-color: var(--couleur-secondaire);
+}
+.carte-simple > a:hover {
+  color: var(--couleur-principale);
+  text-decoration: underline;
+}
+
+.carte-simple img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}

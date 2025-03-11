@@ -1,0 +1,91 @@
+--- Etape 1: HTML ---
+*Problematique :
+- Les class sont parfois en francais et parfois en anglais. Cependant, il est recommande d'utiliser une seule langue.
+- Aucun semantique
+- Le header contient generalement la navigation principale meme si ce n'est pas une obligation. 
+https://html.spec.whatwg.org/multipage/sections.html#the-nav-element
+Le header, contient pas les bonnes informations, selon notre opinion.
+- Beaucoup de fautes d orthographe
+*Plan d'action :
+✅ Il faut remplacer le commentaire du logo dans le head par un logo.ico.
+V   Correction des class (francais).
+V   Remplacer les div par des balises semantique.
+V   Reorganisation du header principal. 
+V   Correction des fautes d'orthographe.
+v  Ajout des meta description et keywords
+
+--- Etape 2: CSS ---
+*Problematique :
+- Pas de variables CSS
+- pas de coherence visuelle dans les padding et margin
+- Clause CSS existantes mais ne faisant reference a rien.
+    Exemple : 
+        blockquote {  
+            font-style: italic;
+            margin-right: var(--rythme-espace);
+            color: #666;
+            font-size: 1.1em;
+            line-height: 2.25em;
+            font-family: Georgia, "Times New Roman", serif;
+            max-width: 60ch;
+        }
+- Selection trop large a la base pour la margin. L'etudiant a du aller changer les margin et padding par la suite dans beaucoup trop de selection.
+    /* Marges de sécurité de base */ 
+		body>* {
+			margin: var(--rythme-base);
+		}
+Plan d'action :
+    - Mise en place de variant CSS dans le fichier general.css :
+        * Les couleurs :
+            Nous avons opte pour la palette de couleur suivant : ?????????????? METTRE LA CAPTURE DE LA PALETTE
+            Validation des contraste :
+                - ????????????????? METTRE LES CAPTURES DES CONTRASTE 
+        * Les espacements :
+            A partir des informations presente dans le code:
+            /* 
+	            Gouttière et rythme de base
+		            20px
+	            Rythme serré
+		            20px
+	            Rythme serré
+		            40px
+	            Rythme espacé
+		            80px
+            */
+        * Les Interlignes: 3 types dans le codes initiales.
+            Nous avons choisi de retirer celui des titres et de laisser uniquement le margin. ????? A VALIDER
+        * Les tailles de police
+        ??????????????? ACOMPLETER
+        * L'epaisseur de police
+        ??????????????? ACOMPLETER
+        => La mise en place des variants permet d'avoir une meilleure coherence visuelle et un maintien plus facile et plus securitaire du code.
+    - Reorgnisation du codes en plusieurs fichiers css: 
+    Nous avons choisi d'identifier les principaux composants et de creer leur propre fichier css.
+    => Permet une meilleure lisibilite du code et d'eviter les repetitions de code d'une page sur l'autre.
+    Exemple: toutes les pages du sites auront le header et le footer.
+    
+
+
+
+
+/* Marges de sécurité de base */ 
+		/* body>* {
+			margin: var(--rythme-base);
+		}
+	 */
+    
+
+blockquote {  /** LOUBNA je ne trouve pas cette balise donc a supprimer
+  font-style: italic;
+  margin-right: var(--rythme-espace);
+  color: #666;
+  font-size: 1.1em;
+  line-height: 2.25em;
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 60ch;
+}
+
+- Demander pour le flex ou grid    
+
+
+

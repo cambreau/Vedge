@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------------------ */
+/* Bouton et barre recherche */
+.recherche {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rythme-tres-serre);
+}
+
+.recherche-barre {
+  display: inline-block;
+  white-space: nowrap; /* Empêche le retour à la ligne entre les éléments */
+}
+
+.recherche-barre > input[type="text"] {
+  width: 200px;
+  padding: var(--rythme-tres-serre);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 4px 0 0 4px;
+  margin-bottom: var(
+    --rythme-tres-serre
+  ); /* ???? LOUBNA QU'EN PENSES-TU AVEC OU SANS ? */
+}
+
+.recherche-barre > input[type="submit"],
+.recherche-barre > button {
+  background-color: var(--couleur-secondaire);
+  text-transform: uppercase;
+  font-weight: var(--epaisseur-police-gras);
+  padding: var(--rythme-tres-serre) var(--rythme-base);
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.recherche-barre > input[type="submit"]:hover,
+.recherche-barre > button:hover {
+  color: var(
+    --couleur-background
+  ); /* ???? La couleur respecte t-elle les contraste */
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------ */
+/* Bouton Appel à l'action */
+/* Règles générales du bouton appel à l'action */
+.appelAction {
+  text-align: center;
+  font-weight: var(--epaisseur-police-gras);
+  border-radius: 8px;
+}
+.appelAction:hover {
+  background: var(--couleur-secondaire);
+  text-decoration: none;
+}
+
+/* Variant principal du bouton */
+.principal {
+  background: var(--couleur-background);
+  font-size: var(--taille-police-petit);
+  padding: var(--rythme-serre);
+  border: thick double var(--couleur-secondaire);
+}
+
+/* Variant secondaire du bouton */
+.secondaire {
+  background: var(--couleur-primaire);
+  padding: var(--rythme-base);
+}

@@ -1,4 +1,0 @@
-Aligner bouton trouver un restaurant
-mettre le format des photos cartes sur illustrator
- width: 250px;
-  height: 200px;

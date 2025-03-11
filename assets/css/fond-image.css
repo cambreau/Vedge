@@ -1,0 +1,42 @@
+/* Règles générales */
+.article-fond-image {
+  width: 100%;
+  height: 550px;
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--rythme-espace);
+  margin: 0;
+}
+
+.article-fond-image h2 {
+  border: none;
+  font-size: var(--taille-police-gros);
+  font-weight: var(--epaisseur-police-tres-gras);
+}
+
+.article-fond-image span {
+  font-size: var(--taille-police-grand);
+  font-weight: var(--epaisseur-police-gras);
+}
+
+.article-fond-image p {
+  margin-bottom: var(--rythme-espace);
+}
+
+/* Publication principale - Accueil */
+[id="accueil-principal"] {
+  background-image: url("../image/accueil.jpg");
+}
+
+/* Publication promotion - Accueil */
+[id="accueil-promotion"] {
+  background-image: url("../image/promotion.png");
+}
+
+/* Publication votre restaurant - Accueil */
+[id="votre-restaurant"] {
+  background-image: url("../image/votre-restaurant.jpg");
+  text-align: center;
+}
