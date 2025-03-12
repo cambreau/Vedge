@@ -1,10 +1,5 @@
-L33 assets/css/bouton-lien.css : lors du hover, le contraste est-il ok ? J'en doute, quelles sont nos autres options ?
-
-L19 assets/css/bouton-lien.css : Est ce que la barre de recherche est centre dans le header ? voir les changements apportes stp
-
-L'image de promotion et celle de berlin sont floues
-Je pense pour la promotion il faut revenir sur des couleur un peu jaune claire, qu en pense-tu?
-
-Reussir a mettre l image un peu plus claire en css avec un texte fonce au dessus pour promotion et votre restaurant
-
-L30 assets/css/bouton-lien.css : Je pense c est ok. Es-toi ?
+Trouver une image promotion 
+Rajouter les fleches - Camille
+Valider le code au complet et comparer avec le code orginal 
+Version mobile 
+Refaire le map

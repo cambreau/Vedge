@@ -1,7 +1,6 @@
-*** Les maquettes contiennent-elles du vrai texte et/ou du « lorem ipsum » ?
-    R - Vrai texte.
+
 *** Les effets interactifs, les transitions et/ou animations sont-ils conçus ?
-    R - Oui dans la majorite.
+    R - Oui dans la majorite. 
     Ajustement : ++++++++++++++++++++++++
 *** Est ce que les éléments interactifs (boutons, champs, liens, etc.) présentent des styles pour chacun de leurs états ?
     R - Oui, a ajuster selon les couleurs de la maquette.
