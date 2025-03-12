@@ -1,19 +1,28 @@
 body > footer {
-  padding: var(--rythme-serre) var(--rythme-espace);
   background-color: var(--couleur-primaire);
 }
 
 .bas-page-conteneur {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  gap: var(--rythme-base);
+  padding: var(--rythme-base);
+  align-items: center;
+}
+.bas-page-conteneur > section > p {
+  margin: var(--rythme-serre) 0;
 }
 
-.footer > nav {
+footer nav {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+}
+
+footer nav > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-base);
+  justify-content: end;
 }
 
 /*droits-reserves*/
@@ -21,4 +30,5 @@ body > footer {
   background: var(--couleur-texte);
   color: var(--couleur-background);
   text-align: center;
+  padding: var(--rythme-serre);
 }

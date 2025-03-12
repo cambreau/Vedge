@@ -65,3 +65,13 @@ h2 {
 main > section {
   margin: var(--rythme-espace);
 }
+
+nav a {
+  text-transform: uppercase;
+  font-weight: var(--epaisseur-police-gras);
+  align-content: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

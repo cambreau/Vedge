@@ -29,22 +29,12 @@ header > nav > div {
   justify-content: end;
 }
 
-header > nav a {
-  text-transform: uppercase;
-  font-weight: var(--epaisseur-police-gras);
-  align-content: center;
-}
-
-header > nav a:hover {
-  text-decoration: underline;
-}
-
 /*------------------------------------------------------------------------------ */
 .sousMenu {
   position: relative;
 }
 
-nav div.sousMenu > div {
+header > nav div.sousMenu > div {
   display: none;
   position: absolute;
   padding: var(--rythme-base);
@@ -55,7 +45,7 @@ nav div.sousMenu > div {
   text-align: center;
 }
 
-nav div.sousMenu:hover > div {
+header > nav div.sousMenu:hover > div {
   display: flex;
   flex-direction: column;
   gap: var(--rythme-serre);

@@ -15,7 +15,6 @@
   border-color: var(--couleur-secondaire);
 }
 .carte-simple > a:hover {
-  color: var(--couleur-principale);
   text-decoration: underline;
 }
 

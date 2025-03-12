@@ -25,17 +25,39 @@
   margin-bottom: var(--rythme-espace);
 }
 
-/* Publication principale - Accueil */
+/* Variant secondaire : */
+.article-secondaire {
+  display: inline-block;
+  text-align: center;
+}
+
+.article-secondaire h2,
+.article-secondaire p,
+.article-secondaire span {
+  max-width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: var(--rythme-serre) var(--rythme-base);
+  border-radius: 5px;
+  margin: var(--rythme-base) auto;
+}
+
+.article-secondaire .appelAction {
+  display: inline-block;
+  margin-top: var(--rythme-base);
+}
+
+/*Variant background */
+/** Publication principale - Accueil */
 [id="accueil-principal"] {
   background-image: url("../image/accueil.jpg");
 }
 
-/* Publication promotion - Accueil */
+/** Publication promotion - Accueil */
 [id="accueil-promotion"] {
-  background-image: url("../image/promotion.png");
+  background-image: url("../image/promotion.jpg");
 }
 
-/* Publication votre restaurant - Accueil */
+/** Publication votre restaurant - Accueil */
 [id="votre-restaurant"] {
   background-image: url("../image/votre-restaurant.jpg");
   text-align: center;

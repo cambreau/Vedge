@@ -16,16 +16,12 @@
   padding: var(--rythme-tres-serre);
   border: 1px solid var(--couleur-bordure);
   border-radius: 4px 0 0 4px;
-  margin-bottom: var(
-    --rythme-tres-serre
-  ); /* ???? LOUBNA QU'EN PENSES-TU AVEC OU SANS ? */
+  margin-bottom: var(--rythme-tres-serre);
 }
 
 .recherche-barre > input[type="submit"],
 .recherche-barre > button {
   background-color: var(--couleur-secondaire);
-  text-transform: uppercase;
-  font-weight: var(--epaisseur-police-gras);
   padding: var(--rythme-tres-serre) var(--rythme-base);
   border: none;
   border-radius: 0 4px 4px 0;
@@ -33,12 +29,11 @@
 
 .recherche-barre > input[type="submit"]:hover,
 .recherche-barre > button:hover {
-  color: var(
-    --couleur-background
-  ); /* ???? La couleur respecte t-elle les contraste */
+  background-color: var(--couleur-background);
   transition: all 0.3s ease;
   transform: scale(1.05);
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*------------------------------------------------------------------------------ */
