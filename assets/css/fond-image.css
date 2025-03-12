@@ -4,7 +4,7 @@
   height: 550px;
   align-content: center;
   background-size: cover;
-  background-position: center;
+  background-position: center ;
   background-repeat: no-repeat;
   padding: var(--rythme-espace);
   margin: 0;
@@ -32,11 +32,29 @@
 
 /* Publication promotion - Accueil */
 [id="accueil-promotion"] {
-  background-image: url("../image/promotion.png");
+  background-image: url("../image/promotions.png");
 }
 
 /* Publication votre restaurant - Accueil */
 [id="votre-restaurant"] {
-  background-image: url("../image/votre-restaurant.jpg");
+  background-image: url("../image/votre-restaurant.png");
   text-align: center;
+}
+
+/* ce que j'ai ajouté , seulement pour voir si c'est bon ou non */
+
+[id="votre-restaurant"] h2,
+[id="votre-restaurant"] p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 50%; 
+}
+
+[id="votre-restaurant"] .appelAction {
+  padding: 12px 24px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }

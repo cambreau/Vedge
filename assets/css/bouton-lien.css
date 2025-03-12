@@ -18,14 +18,14 @@
   border-radius: 4px 0 0 4px;
   margin-bottom: var(
     --rythme-tres-serre
-  ); /* ???? LOUBNA QU'EN PENSES-TU AVEC OU SANS ? */
+  ); /* ???? LOUBNA QU'EN PENSES-TU AVEC OU SANS ?   je vois mnt la barre de recherche est au centre c'est mieux, a mon avis on laisse */
 }
 
 .recherche-barre > input[type="submit"],
 .recherche-barre > button {
   background-color: var(--couleur-secondaire);
-  text-transform: uppercase;
-  font-weight: var(--epaisseur-police-gras);
+  /*text-transform: uppercase;  je pense celle ci a supprimé */
+ /* font-weight: var(--epaisseur-police-gras);   ca aussi */
   padding: var(--rythme-tres-serre) var(--rythme-base);
   border: none;
   border-radius: 0 4px 4px 0;
@@ -33,12 +33,11 @@
 
 .recherche-barre > input[type="submit"]:hover,
 .recherche-barre > button:hover {
-  color: var(
-    --couleur-background
-  ); /* ???? La couleur respecte t-elle les contraste */
-  transition: all 0.3s ease;
-  transform: scale(1.05);
   cursor: pointer;
+  background-color: var(--couleur-background);
+  color: var(--couleur-secondaire);
+  transform: translateY(-2px);      /* est ce que c'Est meiux de le faire ou bien non */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* ca aussi */
 }
 
 /*------------------------------------------------------------------------------ */
@@ -51,7 +50,7 @@
 }
 .appelAction:hover {
   background: var(--couleur-secondaire);
-  text-decoration: none;
+ /* text-decoration: none;  /* si tu enleves cette ligne reste meme resultat */
 }
 
 /* Variant principal du bouton */

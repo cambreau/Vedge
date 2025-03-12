@@ -35,10 +35,10 @@ header > nav a {
   align-content: center;
 }
 
-header > nav a:hover {
+/* header > nav a:hover {    celle ci que j'ai supprimé
   text-decoration: underline;
 }
-
+*/
 /*------------------------------------------------------------------------------ */
 .sousMenu {
   position: relative;
@@ -59,4 +59,9 @@ nav div.sousMenu:hover > div {
   display: flex;
   flex-direction: column;
   gap: var(--rythme-serre);
+}
+
+.sousMenu > div a:hover{           /* j'ai ajouté ca et j'ai supprimé  "header > nav a:hover" a toi de chosir si tu veux qu'on fasse ces changements ou bien on garde ce qu'on avait déja */
+  text-decoration: underline;
+  transform: translateY(-2px); 
 }

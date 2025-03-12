@@ -1,0 +1,21 @@
+L33 assets/css/bouton-lien.css : lors du hover, le contraste est-il ok ? J'en doute, quelles sont nos autres options ?  j'ai ajouter comme une petite annimation et pour la couleur sois en mets le noir dans le hover pour la loupe sois en garde la couleur de bordure.
+
+L19 assets/css/bouton-lien.css : Est ce que la barre de recherche est centre dans le header ? voir les changements apportes stp  ... c'est mieux comme ca 
+
+L'image de promotion et celle de berlin sont floues
+Je pense pour la promotion il faut revenir sur des couleur un peu jaune claire, qu en pense-tu?
+
+Reussir a mettre l image un peu plus claire en css avec un texte fonce au dessus pour promotion et votre restaurant
+
+
+
+
+----------------------------------------------------- Pour Camille -----------------------------------------------------
+
+
+- j'ai changé l'image de Berlin et aussi de promotion
+- j'ai ajouté de luminosité pour restaurent et aussi changer le texte a toi de valider si c'est bon ou on fait d'autre chose
+- pour la barre de recherche c'est mieux ce que tu as fait ca se voit centré 
+- pour le boutton recherche en hover j'ai ajouté une petite annimation et j'ai garder la meme couleur pour l'icone de recherche 
+
+- 

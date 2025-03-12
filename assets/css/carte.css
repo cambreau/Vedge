@@ -15,12 +15,12 @@
   border-color: var(--couleur-secondaire);
 }
 .carte-simple > a:hover {
-  color: var(--couleur-principale);
+  color: var(--couleur-principale);  /* il n'y a pas de couleur-principale sur :root ? */
   text-decoration: underline;
 }
 
 .carte-simple img {
   width: 250px;
   height: 200px;
-  object-fit: cover;
+/*object-fit: cover;  je pense aussi ca a enlever */
 }
