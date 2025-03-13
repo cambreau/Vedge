@@ -10,10 +10,9 @@
     />
     <meta name="author" content="Vedge" />
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/general.css" />
     <title>Vedge : Restaurant Végane</title>
   </head>
@@ -53,15 +52,16 @@
         <div class="entete-action">
           <a class="appelAction principal" href="#">Faire une réservation</a>
           <a class="appelAction principal" href="#">Commander en ligne</a>
-          <form class="recherche">
+          <form class="recherche" method="get" action="">
             <label for="recherche">Trouver un restaurant</label>
             <div class="recherche-barre">
               <input
+                name="recherche"
                 type="text"
                 id="recherche"
                 placeholder="Entrez votre code postal"
               />
-              <button type="submit"><i class="fa fa-search"></i></button>
+              <button type="submit"> <span class="cache">trouver</span><i class="fa fa-search"></i></button>
             </div>
           </form>
         </div>
@@ -186,24 +186,25 @@
             <header>
               <h4>Trouvez un restaurant "Vedge" près de chez vous.</h4>
             </header>
-            <p>Entrez votre ville ou votre code postal</p>
-            <form class="recherche">
-              <input
-                type="search"
-                placeholder="Entrez votre ville ou votre code postal"
-              />
-              <input
-                class="appelAction principal"
-                type="submit"
-                value="Trouver"
-              />
+            <form class="recherche" method="get" action="">
+              <label for="trouver">Entrez votre ville ou votre code postal</label>
+              <div class="recherche-barre">
+                <input
+                  name="trouver"
+                  type="text"
+                  id="trouver"
+                  placeholder="Entrez votre ville ou votre code postal"
+                />
+                <button type="submit">Trouver</button>
+              </div>
             </form>
                 <!-- Iframe pour Google Maps -->
-            <div class="conteneur-map">
+            <figure class="conteneur-map">
               <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223469.45138822172!2d-73.9723771579288!3d45.55825567122121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a43a352df5b%3A0x69b2b7fb6c020d9e!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000">
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223469.45138822172!2d-73.9723771579288!3d45.55825567122121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a43a352df5b%3A0x69b2b7fb6c020d9e!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000"
+                  alt = "carte interactive">
               </iframe>
-            </div>
+            </figure>
           </section>
         </div>
       </section>

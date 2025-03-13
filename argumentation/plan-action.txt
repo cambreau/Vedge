@@ -15,10 +15,10 @@
 .   À l'origine, il n’y avait aucune ressource disponible.
     ✅ Images : Nous avons choisi des images libres de droit, en accord avec notre palette de couleurs et notre thème. De plus, nous avons utilisé Photoshop pour les redimensionner en fonction de nos besoins, afin d’optimiser le poids des fichiers et garantir un chargement rapide du site.
     ✅ Integration d'un logo.
-???-   Intégration d’une carte dans la section Restaurant.
+    ✅ Intégration d’une carte dans la section Restaurant.
 ???-   Sélection de deux polices :
-            Décorative : [Nom de la police]
-            Texte : [Nom de la police]
+            Décorative : "Abhaya Libre" apporte une touche élégante et raffinée tout en restant lisible.
+            Texte      : "Lora" Élégante et légèrement organique, parfaite pour un aspect naturel.
 .   Plusieurs informations sont manquantes :
     ✅ Formulaires : Les labels étaient manquants. Ils étaient présents, mais n’étaient pas placés dans la bonne balise HTML.
     ✅ Il manque des attributs "alt" sur les images.

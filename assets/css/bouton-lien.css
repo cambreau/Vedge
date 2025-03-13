@@ -6,6 +6,16 @@
   gap: var(--rythme-tres-serre);
 }
 
+.cache{
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 .recherche-barre {
   display: inline-block;
   white-space: nowrap; /* Empêche le retour à la ligne entre les éléments */
