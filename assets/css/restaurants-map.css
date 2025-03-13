@@ -9,12 +9,23 @@
 
 .conteneur-restaurant-map {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: var(--rythme-base);
 }
 
 .map {
   background-color: var(--couleur-primaire);
-  padding: var(--rythme-base) var(--rythme-espace);
+  padding: var(--rythme-base);
+}
+
+.map h4 {
+  font-size: var(--taille-police-grand);
+  font-weight: var(--epaisseur-police-tres-gras);
+  border-bottom: 1px solid ;
+}
+
+.recherche input[type="search"] {
+  padding: var(--rythme-serre);
+  border: none;
+  border-radius: var(--rythme-tres-serre);
+  width: 100%;
+  margin-bottom: 20px;
 }

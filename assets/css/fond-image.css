@@ -54,11 +54,11 @@
 
 /** Publication promotion - Accueil */
 [id="accueil-promotion"] {
-  background-image: url("../image/promotion.jpg");
+  background-image: url("../image/option2.png");
 }
 
 /** Publication votre restaurant - Accueil */
 [id="votre-restaurant"] {
-  background-image: url("../image/votre-restaurant.jpg");
-  text-align: center;
+  background-image: url("../image/votre-restaurant.png");
+  /* text-align: center; j'ai enlevé cette ligne */
 }

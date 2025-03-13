@@ -1,7 +1,7 @@
 /* Écran de 1330px et moins---------------------------------------------------------- */
 @media screen and (max-width: 1330px) {
 	/*navigation=================*/
-	nav {
+	/*nav {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		align-items: center;
@@ -25,18 +25,46 @@
 	nav form {
 		flex-grow: 2;
 		order: 2;
-	}
+	}*/
+
+    header > nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .entete-action {
+        margin: var(--rythme-base) ;
+        width: 100%;
+        display: flex;
+	
+    }
+    
+    .menu-principal {
+        order: 4;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    
+    .recherche {
+        order: 1;
+    }
+    
+    .appelAction.principal {
+        flex: 1;
+        order: 2;
+    }
+	
 }
 /* Écran de 900px et moins---------------------------------------------------------- */
 @media screen and (max-width: 900px) {
-	blockquote {
+	/*blockquote {
 		font-size: 1em;
 		line-height: 1.5em;
 	}
 	article img {
 		height: 20rem;
 	}
-	/*navigation================*/
+	
 	nav {
 		flex-direction: column;
 		justify-content: center;
@@ -74,7 +102,57 @@
 	}
 	nav div.sousMenu>div:hover {
 		display: block;
+	} 
+		*/ 
+
+	body > header {
+		flex-direction: column;
+		gap: 0;
+		text-align: center;	
+		padding: var(--rythme-tres-serre);
 	}
+	  
+	header > nav {
+		width: 100%;
+		flex-direction: column;
+	}
+	  
+	header > nav > div {
+		flex-direction: column;
+		width: 100%;
+		gap: 0;
+	}
+	.entete-action{
+		margin:0;
+	}
+	  
+	.sousMenu {
+		padding: var(--rythme-serre);
+		border-top: 1px solid var(--couleur-texte);
+	}
+
+	.appelAction.principal {
+		border-radius: 0;
+		border: none;
+		background-color: transparent;
+		border-top: 1px solid var(--couleur-texte);
+	}
+	  
+	.appelAction.principal:hover {
+		color: var(--couleur-secondaire);
+	}
+
+	header > nav div.sousMenu:hover > div {
+		display: none;
+	}
+	 nav > div:first-child {
+		border-top: none;
+	}
+	  
+	.recherche {
+		display: none;
+	}
+	
 	/*grille flex general===========================*/
 	body>section>div.container {
 		flex-wrap: wrap;
@@ -167,5 +245,11 @@
 	body>section>div.temoignage>div {
 		width: calc(100% - 20px);
 		text-align: center;
+	}
+}
+
+@media (min-width: 1600px) {
+	.conteneur-cartes-simple {
+	  justify-content: center; /* Centre les cartes si la page est très large */
 	}
 }

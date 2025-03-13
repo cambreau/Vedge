@@ -21,7 +21,7 @@ footer nav {
 footer nav > div {
   display: flex;
   flex-direction: row;
-  gap: var(--rythme-base);
+  gap: var(--rythme-espace);  
   justify-content: end;
 }
 
