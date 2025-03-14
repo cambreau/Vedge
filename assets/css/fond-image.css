@@ -1,3 +1,4 @@
+/*************FAIT
 /* Règles générales */
 .article-fond-image {
   width: 100%;
@@ -10,19 +11,17 @@
   margin: 0;
 }
 
+.article-fond-image h2,
+.article-fond-image p {
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: var(--rythme-serre) var(--rythme-base);
+  border-radius: 5px;
+  margin: var(--rythme-base) 0;
+}
+
 .article-fond-image h2 {
   border: none;
-  font-size: var(--taille-police-gros);
-  font-weight: var(--epaisseur-police-tres-gras);
-}
-
-.article-fond-image span {
-  font-size: var(--taille-police-grand);
-  font-weight: var(--epaisseur-police-gras);
-}
-
-.article-fond-image p {
-  margin-bottom: var(--rythme-espace);
 }
 
 /* Variant secondaire : */
@@ -32,18 +31,9 @@
 }
 
 .article-secondaire h2,
-.article-secondaire p,
-.article-secondaire span {
-  max-width: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: var(--rythme-serre) var(--rythme-base);
-  border-radius: 5px;
+.article-secondaire p {
+  max-width: 650px;
   margin: var(--rythme-base) auto;
-}
-
-.article-secondaire .appelAction {
-  display: inline-block;
-  margin-top: var(--rythme-base);
 }
 
 /*Variant background */
@@ -54,11 +44,21 @@
 
 /** Publication promotion - Accueil */
 [id="accueil-promotion"] {
-  background-image: url("../image/promotion.jpg");
+  background-image: url("../image/promotion.png");
 }
 
 /** Publication votre restaurant - Accueil */
 [id="votre-restaurant"] {
   background-image: url("../image/votre-restaurant.jpg");
-  text-align: center;
+}
+
+/* Taille d'ecran inferieur a 768px */
+@media screen and (max-width: 768px) {
+  .article-fond-image {
+    text-align: center;
+  }
+  .article-fond-image h2,
+  .article-fond-image p {
+    margin: var(--rythme-base) auto;
+  }
 }

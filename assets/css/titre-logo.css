@@ -5,13 +5,13 @@ car ce componsant est utilise a plusieurs endroits dans le site. */
 .titreLogo {
   display: flex;
   flex-direction: row;
-  background-color: var(--couleur-primaire);
+  background-color: var(--couleur-principale);
   align-items: center;
   gap: var(--rythme-serre);
 }
 
 .titreLogo img {
-  width: 100px;
+  width: 90px;
 }
 
 .titreLogo h1 {
@@ -23,7 +23,7 @@ car ce componsant est utilise a plusieurs endroits dans le site. */
 }
 
 .titreLogo:hover {
-  background-color: var(--couleur-primaire);
+  background-color: var(--couleur-principale);
 }
 
 .titreLogo:hover h1 {

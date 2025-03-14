@@ -1,3 +1,4 @@
+/* Conteneur principal */
 .restaurants-map {
   display: flex;
   flex-direction: column;
@@ -9,12 +10,44 @@
 
 .conteneur-restaurant-map {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: var(--rythme-base);
 }
 
+/* Carte interactive */
 .map {
-  background-color: var(--couleur-primaire);
-  padding: var(--rythme-base) var(--rythme-espace);
+  background-color: var(--couleur-principale);
+  padding: var(--rythme-base);
+}
+
+.map h3 {
+  border-bottom: 1px solid var(--couleur-bordure);
+}
+
+.map figure {
+  margin-top: var(--rythme-base);
+}
+
+.map input[type="text"] {
+  min-width: 250px;
+}
+
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  .restaurants-map h2 {
+    margin-bottom: var(--rythme-base);
+  }
+  .conteneur-restaurant-map {
+    flex-wrap: wrap-reverse;
+  }
+  .map {
+    min-width: 600px;
+    margin: auto;
+  }
+}
+
+/* Taille d'ecran inferieur a 768px */
+@media screen and (max-width: 768px) {
+  .map {
+    min-width: 0px;
+  }
 }

@@ -14,6 +14,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/general.css" />
     <title>Vedge : Restaurant Végane</title>
   </head>
@@ -30,7 +36,9 @@
       <nav>
         <div class="menu-principal">
           <div class="sousMenu">
-            <a href="#">Restaurants</a>
+            <a href="#"
+              >Restaurants <span class="fleche-deroulant">&#9663;</span></a
+            >
             <div>
               <a href="#">Trois-Rivières</a>
               <a href="#">Drummondville</a>
@@ -41,7 +49,7 @@
             </div>
           </div>
           <div class="sousMenu">
-            <a href="#">Menu</a>
+            <a href="#">Menu <span class="fleche-deroulant">&#9663;</span></a>
             <div>
               <a href="#">Brunch</a>
               <a href="#">Dîner</a>
@@ -53,15 +61,19 @@
         <div class="entete-action">
           <a class="appelAction principal" href="#">Faire une réservation</a>
           <a class="appelAction principal" href="#">Commander en ligne</a>
-          <form class="recherche">
+          <form class="recherche" method="get" action="">
             <label for="recherche">Trouver un restaurant</label>
             <div class="recherche-barre">
               <input
+                name="recherche"
                 type="text"
                 id="recherche"
                 placeholder="Entrez votre code postal"
               />
-              <button type="submit"><i class="fa fa-search"></i></button>
+              <button type="submit">
+                <span class="recherche-cache">trouver</span
+                ><i class="fa fa-search"></i>
+              </button>
             </div>
           </form>
         </div>
@@ -73,7 +85,7 @@
         <header>
           <h2>Restaurant Végane</h2>
         </header>
-        <span>Botanique et décadente</span>
+        <p class="texte-accent">Botanique et décadente</p>
         <p>Savourez les meilleurs plats dans le respect de la nature.</p>
         <a class="appelAction secondaire" href="#">Découvrez notre menu</a>
       </section>
@@ -85,25 +97,37 @@
         <div class="conteneur-cartes-simple">
           <section class="carte-simple">
             <a href="#">
-              <img src="assets/image/brunch.png" alt="Image" />
+              <img
+                src="assets/image/brunch.png"
+                alt="Un bol de yaourt avec des fruits rouges et du miel, accompagné d'avocat."
+              />
               <h3>Brunch</h3>
             </a>
           </section>
           <section class="carte-simple">
             <a href="#">
-              <img src="assets/image/diner.png" alt="Image" />
+              <img
+                src="assets/image/diner.png"
+                alt="Une soupe froide rose garnie de légumes et d’herbes fraîches."
+              />
               <h3>Dîner</h3>
             </a>
           </section>
           <section class="carte-simple">
             <a href="#">
-              <img src="assets/image/souper.png" alt="Image" />
+              <img
+                src="assets/image/souper.png"
+                alt="Un bol de pâtes crémeuses avec des noisettes grillées et des herbes."
+              />
               <h3>Souper</h3>
             </a>
           </section>
           <section class="carte-simple">
             <a href="#">
-              <img src="assets/image/boisson.png" alt="Image" />
+              <img
+                src="assets/image/boisson.png"
+                alt="Une tasse de cappuccino saupoudrée de cacao"
+              />
               <h3>Boisson</h3>
             </a>
           </section>
@@ -184,20 +208,30 @@
           </section>
           <section class="map">
             <header>
-              <h4>Trouvez un restaurant "Vedge" près de chez vous.</h4>
+              <h3>Trouvez un restaurant "Vedge" près de chez vous.</h3>
             </header>
-            <p>Entrez votre ville ou votre code postal</p>
-            <form class="recherche">
-              <input
-                type="search"
-                placeholder="Entrez votre ville ou votre code postal"
-              />
-              <input
-                class="appelAction principal"
-                type="submit"
-                value="Trouver"
-              />
+            <form class="recherche" method="get" action="">
+              <label for="trouver"
+                >Entrez votre ville ou votre code postal</label
+              >
+              <div class="recherche-barre">
+                <input
+                  name="trouver"
+                  type="text"
+                  id="trouver"
+                  placeholder="Entrez votre ville ou votre code postal"
+                />
+                <button type="submit">Trouver</button>
+              </div>
             </form>
+            <!-- Iframe pour Google Maps -->
+            <figure class="conteneur-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223469.45138822172!2d-73.9723771579288!3d45.55825567122121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a43a352df5b%3A0x69b2b7fb6c020d9e!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000"
+                alt="carte interactive"
+              >
+              </iframe>
+            </figure>
           </section>
         </div>
       </section>
@@ -219,7 +253,7 @@
     <!-- FOOTER ========================================================================-->
     <footer>
       <div class="bas-page-conteneur">
-        <section>
+        <section class="horaire">
           <h3>Heure d'ouverture</h3>
           <p>Lundi à Mercredi 11:30 - 22:00</p>
           <p>Jeudi à Samedi 11:30 - 23:00</p>
@@ -234,11 +268,41 @@
               />
               <h1>Vedge</h1></a
             >
-            <a href="#">Notre philosophie</a>
-            <a href="#">Carrières</a>
-            <a href="#">Franchises</a>
-            <a href="#">Presse</a>
-            <a href="#">Contactez-nous</a>
+            <a href="#"
+              ><img
+                class="puce-bas-page"
+                src="./assets/image/fleur.png"
+                alt="fleur jaune"
+              />Notre philosophie</a
+            >
+            <a href="#"
+              ><img
+                class="puce-bas-page"
+                src="./assets/image/fleur.png"
+                alt="fleur jaune"
+              />Carrières</a
+            >
+            <a href="#"
+              ><img
+                class="puce-bas-page"
+                src="./assets/image/fleur.png"
+                alt="fleur jaune"
+              />Franchises</a
+            >
+            <a href="#"
+              ><img
+                class="puce-bas-page"
+                src="./assets/image/fleur.png"
+                alt="fleur jaune"
+              />Presse</a
+            >
+            <a href="#"
+              ><img
+                class="puce-bas-page"
+                src="./assets/image/fleur.png"
+                alt="fleur jaune"
+              />Contactez-nous</a
+            >
           </div>
           <div>
             <a class="appelAction principal" href="#">Réservez une table</a>

@@ -1,3 +1,4 @@
+/*************FAIT
 /*------------------------------------------------------------------------------ */
 /* Bouton et barre recherche */
 .recherche {
@@ -12,11 +13,12 @@
 }
 
 .recherche-barre > input[type="text"] {
-  width: 200px;
   padding: var(--rythme-tres-serre);
   border: 1px solid var(--couleur-bordure);
   border-radius: 4px 0 0 4px;
-  margin-bottom: var(--rythme-tres-serre);
+  margin-bottom: var(
+    --rythme-tres-serre
+  ); /* Pour avoir un meilleur alignement dans le header. */
 }
 
 .recherche-barre > input[type="submit"],
@@ -29,18 +31,33 @@
 
 .recherche-barre > input[type="submit"]:hover,
 .recherche-barre > button:hover {
-  background-color: var(--couleur-background);
+  background-color: var(--couleur-fond);
   cursor: pointer;
   transition: all 0.3s ease;
   transform: scale(1.05);
   transition-duration: 100ms;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Masquer le span Trouver obligatoire WAVE */
+.recherche-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
 
 /*------------------------------------------------------------------------------ */
 /* Bouton Appel à l'action */
 /* Règles générales du bouton appel à l'action */
 .appelAction {
+  min-width: 250px;
+  display: inline-block;
   text-align: center;
   font-weight: var(--epaisseur-police-gras);
   border-radius: 8px;
@@ -52,14 +69,51 @@
 
 /* Variant principal du bouton */
 .principal {
-  background: var(--couleur-background);
-  font-size: var(--taille-police-petit);
+  background: var(--couleur-fond);
   padding: var(--rythme-serre);
   border: thick double var(--couleur-secondaire);
 }
 
 /* Variant secondaire du bouton */
 .secondaire {
-  background: var(--couleur-primaire);
-  padding: var(--rythme-base);
+  background: var(--couleur-principale);
+  padding: var(--rythme-serre) var(--rythme-base);
+  margin-top: var(--rythme-base);
+}
+
+.secondaire:hover {
+  border: solid var(--couleur-texte) 1px;
+}
+
+/* Taille d'ecran inferieur a 1400px */
+@media screen and (min-width: 1170px) and (max-width: 1400px) {
+  header .recherche {
+    order: 1;
+  }
+
+  header .appelAction .principal {
+    flex-grow: 1;
+    order: 2;
+  }
+}
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  header .recherche {
+    display: none;
+  }
+
+  header .appelAction {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid var(--couleur-texte);
+  }
+
+  header .appelAction:hover {
+    background-color: var(--couleur-principale);
+    text-decoration: underline;
+  }
+}
+
+@media screen {
 }

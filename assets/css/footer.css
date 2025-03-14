@@ -1,5 +1,5 @@
 body > footer {
-  background-color: var(--couleur-primaire);
+  background-color: var(--couleur-principale);
 }
 
 .bas-page-conteneur {
@@ -19,16 +19,53 @@ footer nav {
 }
 
 footer nav > div {
-  display: flex;
-  flex-direction: row;
-  gap: var(--rythme-base);
   justify-content: end;
+}
+.puce-bas-page {
+  display: none;
+  width: 15px;
+  margin-right: var(--rythme-tres-serre);
 }
 
 /*droits-reserves*/
 .droits-reserves {
   background: var(--couleur-texte);
-  color: var(--couleur-background);
+  color: var(--couleur-fond);
   text-align: center;
   padding: var(--rythme-serre);
+}
+
+/* Taille d'ecran inferieur a 1400px */
+@media screen and (min-width: 1111px) and (max-width: 1400px) {
+  .bas-page-conteneur {
+    flex-direction: column;
+  }
+}
+
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  .bas-page-conteneur {
+    flex-direction: column-reverse;
+  }
+  .horaire {
+    text-align: center;
+  }
+
+  footer nav > div {
+    flex-direction: column;
+    gap: var(--rythme-tres-serre);
+    /* align-items: center; */
+    margin: var(--rythme-tres-serre);
+  }
+  footer nav > div:first-child > a:first-child {
+    margin-left: 0;
+  }
+
+  footer nav > div > a {
+    margin-left: var(--rythme-base);
+  }
+
+  .puce-bas-page {
+    display: inline-block;
+  }
 }

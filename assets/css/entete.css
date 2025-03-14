@@ -1,27 +1,19 @@
+/*************FAIT
 /*Header*/
 body > header {
   display: flex;
-  background-color: var(--couleur-primaire);
+  background-color: var(--couleur-principale);
   align-items: center;
   padding: var(--rythme-base);
   gap: var(--rythme-tres-espace);
-}
-/* Repartition des elements du header */
-header > nav {
-  flex-grow: 1;
 }
 
 /* Règle générale menu principal --------------------------------------------------------*/
 header > nav {
   display: flex;
+  flex-grow: 1; /* Repartition des elements du header */
   flex-direction: row;
   align-items: center;
-}
-
-header > nav > div {
-  display: flex;
-  flex-direction: row;
-  gap: var(--rythme-espace);
 }
 
 .entete-action {
@@ -41,7 +33,7 @@ header > nav div.sousMenu > div {
   left: 55%;
   top: 100%; /*position du menu pour arriver en bas du lien parent*/
   transform: translateX(-55%);
-  background-color: var(--couleur-primaire);
+  background-color: var(--couleur-principale);
   text-align: center;
 }
 
@@ -49,4 +41,72 @@ header > nav div.sousMenu:hover > div {
   display: flex;
   flex-direction: column;
   gap: var(--rythme-serre);
+}
+
+/* Taille d'ecran inferieur a 1400px */
+@media screen and (min-width: 1170px) and (max-width: 1400px) {
+  header > nav {
+    flex-direction: column;
+  }
+
+  .entete-action {
+    width: 100%;
+    order: 2;
+    margin: var(--rythme-base);
+  }
+
+  .entete-action > * {
+    flex-grow: 1;
+  }
+
+  header .menu-principal {
+    order: 4;
+    width: 100%;
+    border-top: 1px solid var(--couleur-bordure);
+  }
+}
+
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  body > header {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: var(--rythme-tres-serre);
+  }
+
+  header > nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav > * {
+    width: 100%;
+  }
+
+  header > nav > div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .entete-action {
+    margin: 0;
+  }
+
+  header .menu-principal {
+    border: none;
+  }
+
+  /* Gestion du sous-menu */
+  .sousMenu {
+    padding: var(--rythme-serre);
+    border-top: 1px solid var(--couleur-texte);
+  }
+
+  .fleche-deroulant {
+    display: none;
+  }
+
+  header > nav div.sousMenu:hover > div {
+    display: none;
+  }
 }

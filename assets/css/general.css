@@ -14,23 +14,31 @@
   --rythme-espace: 40px;
   --rythme-tres-espace: 80px;
   /* --- Couleurs --- */
-  --couleur-background: #fffbf7;
+  --couleur-fond: #fffbf7;
   --couleur-texte: #252b0c;
-  --couleur-primaire: #99c07f;
+  --couleur-principale: #99c07f;
   --couleur-secondaire: #e5be7c;
   --couleur-bordure: #ccc;
   /* --- Interligne --- */
   --interligne-base: 1.5625em;
+  --interligne-grand: 2.5rem;
   --interligne-logo: 1.78em;
+  /* --- Police --- */
+  --police-general: "Lora", sans-serif;
   /* --- Taille de police --- */
-  --taille-police-petit: 0.9em;
-  --taille-police-normal: 1em;
-  --taille-police-grand: 1.5em;
-  --taille-police-gros: 2em;
+  --taille-police-petit: 0.8rem;
+  --taille-police-normal: 1rem;
+  --taille-police-moyen: 1.2rem;
+  --taille-police-grand: 1.8rem;
+  --taille-police-gros: 2rem;
   /* --- Epaisseur de police --- */
   --epaisseur-police-normale: 400;
   --epaisseur-police-gras: 500;
   --epaisseur-police-tres-gras: 700;
+  /* Points de rupture (ne peuvent pas être utilisés comme variables, mais sont indiqués à titre informatif). */
+  /* --ecran-petit: 768px;
+     --ecran-moyen: 1170px;
+     --ecran-large: 1400px; */
 }
 
 /* Règles génériques -----------------------  ==== ref = M.Charpentier*/
@@ -44,26 +52,23 @@
 
 /* Base typographique à être héritée ==== ref = M.Charpentier*/
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: var(--police-general);
   line-height: var(--interligne-base);
+  font-size: var(--taille-police-normal);
   color: var(--couleur-texte);
 }
 
+/* Lien */
 a {
   text-decoration: none;
   color: var(--couleur-texte);
 }
 
-/* Intervention graphique séparant clairement les titres du contenu les suivant */
-h2 {
-  border-bottom: 1px solid var(--couleur-secondaire);
-  padding-bottom: var(--rythme-serre);
-  margin-bottom: var(--rythme-base);
-}
-
-main > section {
-  margin: var(--rythme-espace);
+/* Navigation */
+nav > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-espace);
 }
 
 nav a {
@@ -74,4 +79,32 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* Titre */
+h1 {
+  font-size: var(--taille-police-gros);
+}
+
+h2 {
+  border-bottom: 1px solid var(--couleur-secondaire);
+  padding-bottom: var(--rythme-serre);
+  margin-bottom: var(--rythme-base);
+  font-size: var(--taille-police-gros);
+  font-weight: var(--epaisseur-police-tres-gras);
+  line-height: var(--interligne-grand);
+}
+
+h3 {
+  font-size: var(--taille-police-moyen);
+  margin: var(--rythme-serre) 0;
+}
+
+.texte-accent {
+  font-size: var(--taille-police-grand);
+}
+
+/* MAIN */
+main > section {
+  margin: var(--rythme-espace);
 }
