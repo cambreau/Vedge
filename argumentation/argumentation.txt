@@ -110,11 +110,40 @@
        
        
         - Modification visuelles :
+
+            --  Pour les écrans de taille entre 1170 et 1400 pixels :
+
             En-tete: 
-                . Lorsque l'ecran est a une taille comprise entre 1170 et 1400 nous avons choisi de conserver l'ordre d'affichage pour les boutons appelAction et la barre recherche afin d'eviter de meler l'utilisateur. Cela donne une consistance visuel.
+                Nous avons choisi de conserver l'ordre d'affichage pour les boutons d'appel à l'action et la barre de recherche afin d'éviter de mêler l'utilisateur. Cela donne une consistance visuelle. Nous avons ajouté des indicateurs de menu déroulant pour les sections "RESTAURANTS" et "MENU", améliorant l'affordance et indiquant clairement à l'utilisateur que ces éléments sont interactifs et contiennent des sous-menus.
+
+            Pied page :
+                On a aligné le logo avec le menu pour créer une structure horizontale plus équilibrée, ce qui améliore l'aspect visuel du site et facilite la navigation pour les utilisateurs.
+
+
+
+            --  Pour les écrans de taille entre 768 et 1170 pixels :
+
+            En-tete:
+                Nous avons centralisé les boutons "FAIRE UNE RÉSERVATION" et "COMMANDER EN LIGNE" pour améliorer l'équilibre visuel et mettre en valeur ces actions clés de conversion. Et on a déplacé la barre de recherche vers la droite pour optimiser la hiérarchie visuelle, plaçant les fonctionnalités principales au centre et les éléments secondaires en périphérie. Nous avons rapproché les liens "RESTAURANTS" et "MENU" pour créer une navigation plus cohérente et réduire les mouvements oculaires et optimisant l'accès aux options principales tout en maintenant un espacement suffisant entre les éléments pour éviter toute interférence lors des clics.
+
+            
+            
+            --  Pour les écrans de taille 768 pixels et moins :
+
+            Pour les sections : 
+                Nous avons centré les sections 1 (Photo d'accueil) et 4 (Restaurant vedette) afin d'assurer un alignement harmonieux et une esthétique cohérente. Ce choix permet de créer un équilibre visuel, d’attirer davantage l’attention sur ces éléments clés et d’offrir une présentation plus soignée et professionnelle.
+
+
+
+
+
+
+
+/* ce qu'est en bas je dois valider avec toi */
+
             Modification du gap pour les cartes. Nous avons opte pour un plus grand espacement afin d'eviter des erreurs de clics pour l'utilisateur.
             - Lorsque le site est consulte sur un ecran plus petit nous avons choisi de centrer le conteneur de la carte plutot que de le laisser a gauche pour des raison d'alignement et d'esthetisme.
-            - Dans le footer, le titre Vedge et le menu sont sur la meme ligne car nous avons rajoute un logo large. Cela donne un meilleur aspet visuel.
+           
        
 
 

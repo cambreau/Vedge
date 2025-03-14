@@ -1,1 +1,16 @@
  - Aligner la carte
+
+- on peut ajouter cette ligne dans la classe .map pour aligner la carte , mais par contre  a la tille d'ecran inferieur a 1170px ne sera pas aligné .
+
+.map {
+  max-height:645px;
+}
+
+- j'ai enlevé action="" dans form
+
+Error: Bad value for attribute action on element form: Must be non-empty.
+From line 64, column 11; to line 64, column 57
+  <form class="recherche" method="get" action="">↩   
+    
+
+- j'ai mis les captures d'écrans dans "Validation"
