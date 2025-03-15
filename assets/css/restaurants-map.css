@@ -40,7 +40,7 @@
     flex-wrap: wrap-reverse;
   }
   .map {
-    min-width: 620px;  /* j'ai fait 620px au lieu 600px pour qu'il sera bien aligné avec les cartes*/
+    min-width: 600px;
     margin: auto;
   }
 }
@@ -48,6 +48,6 @@
 /* Taille d'ecran inferieur a 768px */
 @media screen and (max-width: 768px) {
   .map {
-    min-width: 0px;  /* est ce que ici on peut faire auto au lieu 0px ? */
+    min-width: auto;
   }
 }

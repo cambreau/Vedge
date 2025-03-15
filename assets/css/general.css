@@ -100,10 +100,6 @@ h3 {
   margin: var(--rythme-serre) 0;
 }
 
-.texte-accent {
-  font-size: var(--taille-police-grand);
-}
-
 /* MAIN */
 main > section {
   margin: var(--rythme-espace);

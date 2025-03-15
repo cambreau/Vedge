@@ -18,9 +18,22 @@ footer nav {
   flex-grow: 1;
 }
 
+.menu-secondaire {
+  align-content: center;
+}
+
+.menu-secondaire > a {
+  margin: 0 var(--rythme-base);
+}
+
+.menu-secondaire :last-child {
+  margin-right: 0;
+}
+
 footer nav > div {
   justify-content: end;
 }
+
 .puce-bas-page {
   display: none;
   width: 15px;
@@ -35,8 +48,8 @@ footer nav > div {
   padding: var(--rythme-serre);
 }
 
-/* Taille d'ecran inferieur a 1400px */
-@media screen and (min-width: 1111px) and (max-width: 1400px) {
+/* Taille d'ecran entre 1170px a 1400px */
+@media screen and (min-width: 1170px) and (max-width: 1400px) {
   .bas-page-conteneur {
     flex-direction: column;
   }
@@ -54,9 +67,14 @@ footer nav > div {
   footer nav > div {
     flex-direction: column;
     gap: var(--rythme-tres-serre);
-    /* align-items: center; */
     margin: var(--rythme-tres-serre);
   }
+
+  .menu-secondaire > a {
+    display: block;
+    margin: var(--rythme-tres-serre) var(--rythme-base);
+  }
+
   footer nav > div:first-child > a:first-child {
     margin-left: 0;
   }

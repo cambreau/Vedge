@@ -1,4 +1,3 @@
-/*************FAIT
 /*Header*/
 body > header {
   display: flex;
@@ -43,7 +42,7 @@ header > nav div.sousMenu:hover > div {
   gap: var(--rythme-serre);
 }
 
-/* Taille d'ecran inferieur a 1400px */
+/* Taille d'ecran entre 1170px et 1400px */
 @media screen and (min-width: 1170px) and (max-width: 1400px) {
   header > nav {
     flex-direction: column;

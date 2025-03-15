@@ -101,55 +101,43 @@
             * Les tailles de police
             Nous avons créé une taille de police afin de mettre plus en évidence les éléments de type bouton et titre et pour une meilleure lisibilité.
             * L'epaisseur de police
-            ??????????????? ACOMPLETER
-        => La mise en place des variants permet d'avoir une meilleure coherence visuelle et un maintien plus facile et plus securitaire du code.
+            => La mise en place des variants permet d'avoir une meilleure coherence visuelle et un maintien plus facile et plus securitaire du code.
        ✅- Reorgnisation du codes en plusieurs fichiers css: 
             Nous avons choisi d'identifier les principaux composants et de creer leur propre fichier css afin de respecter les bonnes pratiques.
-        => Permet une meilleure lisibilite du code et d'eviter les repetitions de code d'une page sur l'autre.
-       
-       
-       
+            => Permet une meilleure lisibilite du code et d'eviter les repetitions de code d'une page sur l'autre.
         - Modification visuelles :
-
-            --  Pour les écrans de taille entre 1170 et 1400 pixels :
-
+          --  Pour les écrans de taille entre 1170 et 1400 pixels :
             En-tete: 
-                Nous avons choisi de conserver l'ordre d'affichage pour les boutons d'appel à l'action et la barre de recherche afin d'éviter de mêler l'utilisateur. Cela donne une consistance visuelle. Nous avons ajouté des indicateurs de menu déroulant pour les sections "RESTAURANTS" et "MENU", améliorant l'affordance et indiquant clairement à l'utilisateur que ces éléments sont interactifs et contiennent des sous-menus.
-
+            ✅   - Nous avons choisi de conserver l'ordre d'affichage pour les boutons "d'appel à l'action" et la barre de recherche afin d'éviter de mêler l'utilisateur. 
+                  Cela donne une meilleure consistance visuelle. 
+            ✅   - Nous avons ajouté des indicateurs de menu déroulant pour les sections "RESTAURANTS" et "MENU", permettant d'indiquer clairement à l'utilisateur que ces éléments sont interactifs et contiennent des sous-menus.
             Pied page :
-                On a aligné le logo avec le menu pour créer une structure horizontale plus équilibrée, ce qui améliore l'aspect visuel du site et facilite la navigation pour les utilisateurs.
-
-
-
-            --  Pour les écrans de taille entre 768 et 1170 pixels :
-
+            ✅   - On a aligné le logo avec le menu pour créer une structure horizontale plus équilibrée, ce qui améliore l'aspect visuel du site et facilite la navigation pour les utilisateurs.
+          --  Pour les écrans de taille entre 768 et 1170 pixels :
             En-tete:
-                Nous avons centralisé les boutons "FAIRE UNE RÉSERVATION" et "COMMANDER EN LIGNE" pour améliorer l'équilibre visuel et mettre en valeur ces actions clés de conversion. Et on a déplacé la barre de recherche vers la droite pour optimiser la hiérarchie visuelle, plaçant les fonctionnalités principales au centre et les éléments secondaires en périphérie. Nous avons rapproché les liens "RESTAURANTS" et "MENU" pour créer une navigation plus cohérente et réduire les mouvements oculaires et optimisant l'accès aux options principales tout en maintenant un espacement suffisant entre les éléments pour éviter toute interférence lors des clics.
-
-            
-            
-            --  Pour les écrans de taille 768 pixels et moins :
-
+            ✅   - Nous avons centralisé les boutons "FAIRE UNE RÉSERVATION" et "COMMANDER EN LIGNE" pour améliorer l'équilibre visuel et mettre en valeur ces actions clés. 
+            ✅   - On a déplacé la barre de recherche vers la droite pour optimiser la hiérarchie visuelle, plaçant les fonctionnalités principales au centre et les éléments secondaires en périphérie. 
+            ✅   - Nous avons rapproché les liens "RESTAURANTS" et "MENU" pour créer une navigation plus cohérente et optimisant l'accès aux options principales tout en maintenant un espacement suffisant entre les éléments pour éviter toute interférence lors des clics.
+         -- Pour les ecrans de taille inferieur a 768 pixels:
+            ✅   - Nous avons centré le texte sur la section 1 (Photo d'accueil).
+            ✅   - Nous avons egalement centre le section 4 (Restaurant vedette) afin d'assurer un alignement harmonieux et une esthétique cohérente. Ce choix permet de créer un équilibre visuel, d’attirer davantage l’attention sur ces éléments clés et d’offrir une présentation plus soignée et professionnelle.
+         -- Toutes les tailles:
             Pour les sections : 
-                Nous avons centré les sections 1 (Photo d'accueil) et 4 (Restaurant vedette) afin d'assurer un alignement harmonieux et une esthétique cohérente. Ce choix permet de créer un équilibre visuel, d’attirer davantage l’attention sur ces éléments clés et d’offrir une présentation plus soignée et professionnelle.
-
-
-
-
-
-
-
-/* ce qu'est en bas je dois valider avec toi */
-
-            Modification du gap pour les cartes. Nous avons opte pour un plus grand espacement afin d'eviter des erreurs de clics pour l'utilisateur.
-            - Lorsque le site est consulte sur un ecran plus petit nous avons choisi de centrer le conteneur de la carte plutot que de le laisser a gauche pour des raison d'alignement et d'esthetisme.
+            ✅   - Pour les memes raison que pour la section 4, nous avons centre les cartes dans la section 2 et section 3.
            
-       
 
 
 
 
 
 
+
+
+
+
+
+
+
+- centrer carte
 
 
