@@ -14,7 +14,7 @@
 .recherche-barre > input[type="text"] {
   padding: var(--rythme-tres-serre);
   border: 1px solid var(--couleur-bordure);
-  border-radius: 4px 0 0 4px;
+  border-radius: var(--arrondi-petit) 0 0 var(--arrondi-petit);
   margin-bottom: var(
     --rythme-tres-serre
   ); /* Pour avoir un meilleur alignement dans le header. */
@@ -25,7 +25,7 @@
   background-color: var(--couleur-secondaire);
   padding: var(--rythme-tres-serre) var(--rythme-base);
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 var(--arrondi-petit) var(--arrondi-petit) 0;
 }
 
 .recherche-barre > input[type="submit"]:hover,
@@ -59,7 +59,7 @@
   display: inline-block;
   text-align: center;
   font-weight: var(--epaisseur-police-gras);
-  border-radius: 8px;
+  border-radius: var(--arrondi-grand);
 }
 .appelAction:hover {
   background: var(--couleur-secondaire);
@@ -84,8 +84,8 @@
   border: solid var(--couleur-texte) 1px;
 }
 
-/* Taille d'ecran inferieur a 1400px */
-@media screen and (min-width: 1170px) and (max-width: 1400px) {
+/* Taille d'ecran inferieur a 1450px */
+@media screen and (min-width: 1170px) and (max-width: 1450px) {
   header .recherche {
     order: 1;
   }

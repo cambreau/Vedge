@@ -2,7 +2,7 @@
 @import url("titre-logo.css");
 @import url("entete.css");
 @import url("carte.css");
-@import url("restaurants-map.css");
+@import url("restaurants-plan.css");
 @import url("fond-image.css");
 @import url("footer.css");
 /* Variables CSS -----------------------  ==== ref = M.Charpentier*/
@@ -26,7 +26,6 @@
   /* --- Police --- */
   --police-general: "Lora", sans-serif;
   /* --- Taille de police --- */
-  --taille-police-petit: 0.8rem;
   --taille-police-normal: 1rem;
   --taille-police-moyen: 1.2rem;
   --taille-police-grand: 1.8rem;
@@ -35,10 +34,13 @@
   --epaisseur-police-normale: 400;
   --epaisseur-police-gras: 500;
   --epaisseur-police-tres-gras: 700;
+  /* Border-radius */
+  --arrondi-petit: 4px;
+  --arrondi-grand: 8px;
   /* Points de rupture (ne peuvent pas être utilisés comme variables, mais sont indiqués à titre informatif). */
   /* --ecran-petit: 768px;
      --ecran-moyen: 1170px;
-     --ecran-large: 1400px; */
+     --ecran-large: 1450px; */
 }
 
 /* Règles génériques -----------------------  ==== ref = M.Charpentier*/
@@ -84,13 +86,21 @@ nav a:hover {
 /* Titre */
 h1 {
   font-size: var(--taille-police-gros);
+  font-weight: var(--epaisseur-police-gras);
+  line-height: var(--interligne-logo);
+  text-transform: uppercase;
+  transition: all;
+}
+
+h1:hover {
+  font-weight: var(--epaisseur-police-tres-gras);
 }
 
 h2 {
   border-bottom: 1px solid var(--couleur-secondaire);
   padding-bottom: var(--rythme-serre);
   margin-bottom: var(--rythme-base);
-  font-size: var(--taille-police-gros);
+  font-size: var(--taille-police-grand);
   font-weight: var(--epaisseur-police-tres-gras);
   line-height: var(--interligne-grand);
 }

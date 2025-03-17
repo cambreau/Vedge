@@ -1,3 +1,10 @@
+Loubna Souiba et Camille Breau 
+
+Choix: Vedge 2
+Nous avons choisi cette maquette pour son aspect visuel.
+En effet, nous avons trouvé que le site était celui qui avait le moins de défauts visuels (alignement, emplacement des éléments clés). 
+De ce fait, afin de respecter la maquette, nous avons préféré améliorer le code et essayer de modifier le moins possible les éléments graphiques.
+
 La maquette contient l’intégralité du texte. Toutefois, nous avons remarqué de nombreuses fautes d’orthographe.
 
 Les éléments interactifs comportent des transitions.
@@ -29,7 +36,6 @@ Nous avons plusieurs variantes des maquettes adaptées aux différents appareils
 
 La composition peut occuper l'entièreté de la fenêtre lorsque cela est possible.
     ✅ Cependant, si la largeur doit être limitée, la couleur d'arrière-plan de l'espace vacant sera blanche.
-    ✅ Lorsque la fenêtre est plus grande que la dimension maximale de la composition, les composants comme les cartes doivent être alignés au centre.
 
 Validation de l'accessibilité :
     ✅ Les couleurs : Nous avons opté pour la palette suivante : argumentation/palette-couleurs.png
@@ -38,19 +44,29 @@ Validation de l'accessibilité :
             Couleur de fond : Blanc (#FFFBF7) → Une teinte douce et naturelle de blanc cassé, créant une ambiance chaleureuse et accueillante.
             Couleur de texte : Vert foncé (#252B0C) → Cette couleur reste dans le thème de la nature tout en offrant un bon contraste.
             Couleur intermédiaire pour les bordures : Gris (#CCC) → Une couleur neutre et simple, idéale pour les bordures.
+    ✅  La taille de police : 
+        --taille-police-normal: 1rem;
+        --taille-police-moyen: 1.2rem;
+        --taille-police-grand: 1.8rem;
+        --taille-police-gros: 2rem;
+        On a opté pour ces tailles de police pour garantir une bonne hiérarchie visuelle et une lisibilité optimale sur tous les appareils. 
+        1rem pour le texte normal est la taille de base, celle que les utilisateurs attendent, ce qui la rend parfaite pour le contenu courant. 
+        Ensuite, 1.2rem est un peu plus grand, idéal pour les sous-titres ou les informations secondaires qui doivent être visibles. 
+        Pour les titres de section, on est passé à 1.8rem, afin qu’ils ressortent bien sans trop dénoter avec le reste du texte. 
+        Enfin, 2rem est réservé au nom du restaurant.
     ✅ Nous avons validé le contraste des couleurs grâce au site Adobe Color.
-    ✅ Soumission du site sur WAVE: argumentation/wave-page-index.png
+    ✅ Soumission du site sur WAVE: argumentation/validation/wave-page-index.png
     ✅ Formulaire : Ajout des labels.
 
 Analyse du HTML
     Problématique :
-        . Les classes sont parfois en français et parfois en anglais. Il est recommandé d'utiliser une seule langue.
+        . Les class sont parfois en français et parfois en anglais. Il est recommandé d'utiliser une seule langue.
         . Manque de sémantique.
         . Le header contient généralement la navigation principale, même si ce n'est pas une obligation.
         . Selon notre opinion, le header ne contient pas les bonnes informations.
     Plan d'action :
         ✅ Remplacement du commentaire du logo dans le head par un logo.ico.
-        ✅ Correction des classes (français).
+        ✅ Correction des class (français).
         ✅ Remplacement des div par des balises sémantiques.
         ✅ Réorganisation du header principal :
             - "VEDGE" en haut à gauche transformé en titre h1 au lieu d’un span avec un logo. Cette partie ainsi que le nav ont été insérés dans le header.
@@ -76,10 +92,12 @@ Analyse du CSS
     Plan d'action :
     ✅ Mise en place de variables CSS dans general.css.
     ✅ Réorganisation du CSS en plusieurs fichiers :
-        Identification des principaux composants et création de leurs propres fichiers CSS (meilleure lisibilité et moins de répétition).
+    ✅ Identification des principaux composants et création de leurs propres fichiers CSS (meilleure lisibilité et moins de répétition).
+    ✅ Modification du CSS pour respecter les bonnes pratiques et garantir un code cohérent et consistant.
+    ✅ Pour respecter le code initial, nous avons décidé de garder flex pour la disposition des cartes et de ne pas passer à grid.
 
 Modifications visuelles :
-    --  Pour les écrans de taille entre 1170 et 1400 pixels :
+    --  Pour les écrans de taille entre 1170 et 1450 pixels :
             En-tete: 
             ✅  Nous avons choisi de conserver l'ordre d'affichage pour les boutons "appel à l'action" et la barre de recherche afin d'éviter de mêler l'utilisateur. 
                 Cela donne une meilleure consistance visuelle. 
@@ -98,3 +116,4 @@ Modifications visuelles :
             Pour les sections : 
             ✅   Pour les mêmes raisons que pour la section 4, nous avons centré les cartes dans la section 2 et la section 3.
            
+✅ argumentation/validation/validation-W3C-page-index.png

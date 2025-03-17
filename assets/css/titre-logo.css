@@ -13,19 +13,6 @@
   width: 90px;
 }
 
-.titreLogo h1 {
-  font-size: var(--taille-police-gros);
-  font-weight: var(--epaisseur-police-gras);
-  line-height: var(--interligne-logo);
-  text-transform: uppercase;
-  transition: all;
-}
-
 .titreLogo:hover {
   background-color: var(--couleur-principale);
-}
-
-.titreLogo:hover h1 {
-  font-weight: var(--epaisseur-police-tres-gras);
-  text-decoration: underline;
 }

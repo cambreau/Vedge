@@ -1,3 +1,6 @@
+/* Cette section utilise une image en arrière-plan. Par conséquent, nous l'avons considérée comme un élément graphique.
+  => Utilisation de width et height.
+
 /* Règles générales */
 .article-fond-image {
   width: 100%;
@@ -16,7 +19,7 @@
   max-width: 400px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: var(--rythme-serre) var(--rythme-base);
-  border-radius: 5px;
+  border-radius: var(--arrondi-petit);
   margin: var(--rythme-base) 0;
 }
 

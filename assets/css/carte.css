@@ -10,7 +10,7 @@
 .carte-simple {
   padding: var(--rythme-base);
   border: solid 1px var(--couleur-bordure);
-  border-radius: 8px;
+  border-radius: var(--arrondi-grand);
 }
 
 .carte-simple:hover {
