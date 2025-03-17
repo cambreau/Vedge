@@ -94,6 +94,7 @@ h1 {
 
 h1:hover {
   font-weight: var(--epaisseur-police-tres-gras);
+  text-decoration: underline;
 }
 
 h2 {
