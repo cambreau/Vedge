@@ -25,17 +25,15 @@
   </head>
   <body>
     <!-- navigation =================================================================================================-->
-    <header>
-      <a class="titreLogo" href="index.html">
+    <header class="entete">
+      <a class="titre-logo" href="index.html">
         <img src="assets/image/logo-vedge.png" alt="Logo du restaurant Vedge" />
         <h1>Vedge</h1></a
       >
       <nav>
         <div class="menu-principal">
           <div class="sousMenu">
-            <a href="#"
-              >Restaurants <span class="fleche-deroulant">&#9663;</span></a
-            >
+            <a href="#">Restaurants <span>&#9663;</span></a>
             <div>
               <a href="#">Trois-Rivières</a>
               <a href="#">Drummondville</a>
@@ -46,7 +44,7 @@
             </div>
           </div>
           <div class="sousMenu">
-            <a href="#">Menu <span class="fleche-deroulant">&#9663;</span></a>
+            <a href="#">Menu <span>&#9663;</span></a>
             <div>
               <a href="#">Brunch</a>
               <a href="#">Dîner</a>
@@ -56,8 +54,12 @@
           </div>
         </div>
         <div class="entete-action">
-          <a class="appelAction principal" href="#">Faire une réservation</a>
-          <a class="appelAction principal" href="#">Commander en ligne</a>
+          <a class="bouton-appelAction principal" href="#"
+            >Faire une réservation</a
+          >
+          <a class="bouton-appelAction principal" href="#"
+            >Commander en ligne</a
+          >
           <form class="recherche" method="get">
             <label for="recherche">Trouver un restaurant</label>
             <div class="recherche-barre">
@@ -78,20 +80,24 @@
     </header>
     <main>
       <!-- section 1 : Photo d'accueil==================================================================-->
-      <section class="article-fond-image" id="accueil-principal">
-        <header>
-          <h2>Restaurant Végane</h2>
-        </header>
-        <h3>Botanique et décadente</h3>
-        <p>Savourez les meilleurs plats dans le respect de la nature.</p>
-        <a class="appelAction secondaire" href="#">Découvrez notre menu</a>
+      <section class="fond-image" id="fond-image-accueil">
+        <div class="boite">
+          <header>
+            <h2>Restaurant Végane</h2>
+          </header>
+          <p class="texte-accentuation">Botanique et décadente</p>
+          <p>Savourez les meilleurs plats dans le respect de la nature.</p>
+        </div>
+        <a class="bouton-appelAction secondaire" href="#"
+          >Découvrez notre menu</a
+        >
       </section>
       <!-- section 2 : categorie de menu ======================================================-->
       <section>
         <header>
           <h2>Menu</h2>
         </header>
-        <div class="conteneur-cartes-simple">
+        <div class="conteneur-carte">
           <section class="carte-simple">
             <a href="#">
               <img
@@ -132,22 +138,26 @@
       </section>
       <!-- section 3 : promotion =========================================================================-->
       <section
-        class="article-fond-image article-secondaire"
-        id="accueil-promotion"
+        class="fond-image fond-image-secondaire"
+        id="fond-image-promotion"
       >
-        <header>
-          <h2>Profitez de nos promotions</h2>
-        </header>
-        <p>Deux mimosas pour 15$ pendant toute l'heure du brunch</p>
-        <a class="appelAction secondaire" href="#">Voir nos promotions</a>
+        <div class="boite">
+          <header>
+            <h2>Profitez de nos promotions</h2>
+          </header>
+          <p>Deux mimosas pour 15$ pendant toute l'heure du brunch</p>
+        </div>
+        <a class="bouton-appelAction secondaire" href="#"
+          >Voir nos promotions</a
+        >
       </section>
       <!-- section 4 : Restaurant vedette =================================================================-->
       <section class="restaurants-plan">
         <header>
           <h2>Restaurants en vedette</h2>
         </header>
-        <div class="conteneur-restaurant-plan">
-          <div class="conteneur-cartes-simple">
+        <div class="restaurant-plan-conteneur">
+          <div class="conteneur-carte">
             <section class="carte-simple">
               <h3>Trois-Rivières</h3>
               <a href="#">
@@ -234,21 +244,23 @@
       </section>
       <!-- section 5 : initation franchise ==============================================-->
       <section
-        class="article-fond-image article-secondaire"
-        id="votre-restaurant"
+        class="fond-image fond-image-secondaire"
+        id="fond-image-restaurant"
       >
-        <header>
-          <h2>Vous voulez établir votre propre restaurant?</h2>
-        </header>
-        <p>
-          Laissez-nous vous convaincre de développer votre propre franchise
-          "Vedge".
-        </p>
-        <a class="appelAction secondaire" href="#">Contactez-nous</a>
+        <div class="boite">
+          <header>
+            <h2>Vous voulez établir votre propre restaurant?</h2>
+          </header>
+          <p>
+            Laissez-nous vous convaincre de développer votre propre franchise
+            "Vedge".
+          </p>
+        </div>
+        <a class="bouton-appelAction secondaire" href="#">Contactez-nous</a>
       </section>
     </main>
     <!-- FOOTER ========================================================================-->
-    <footer>
+    <footer class="bas-page">
       <div class="bas-page-conteneur">
         <section class="horaire">
           <h3>Heure d'ouverture</h3>
@@ -259,7 +271,7 @@
         <nav>
           <div>
             <div>
-              <a class="titreLogo" href="index.html">
+              <a class="titre-logo" href="index.html">
                 <img
                   src="assets/image/logo-vedge.png"
                   alt="Logo du restaurant Vedge"
@@ -270,7 +282,7 @@
             <div class="menu-secondaire">
               <a href="#">
                 <img
-                  class="puce-bas-page"
+                  class="puce"
                   src="./assets/image/fleur.png"
                   alt="fleur jaune"
                 />
@@ -278,7 +290,7 @@
               </a>
               <a href="#">
                 <img
-                  class="puce-bas-page"
+                  class="puce"
                   src="./assets/image/fleur.png"
                   alt="fleur jaune"
                 />
@@ -286,7 +298,7 @@
               </a>
               <a href="#">
                 <img
-                  class="puce-bas-page"
+                  class="puce"
                   src="./assets/image/fleur.png"
                   alt="fleur jaune"
                 />
@@ -294,7 +306,7 @@
               </a>
               <a href="#">
                 <img
-                  class="puce-bas-page"
+                  class="puce"
                   src="./assets/image/fleur.png"
                   alt="fleur jaune"
                 />
@@ -302,7 +314,7 @@
               </a>
               <a href="#">
                 <img
-                  class="puce-bas-page"
+                  class="puce"
                   src="./assets/image/fleur.png"
                   alt="fleur jaune"
                 />
@@ -311,8 +323,12 @@
             </div>
           </div>
           <div>
-            <a class="appelAction principal" href="#">Réservez une table</a>
-            <a class="appelAction principal" href="#">Commandez en ligne</a>
+            <a class="bouton-appelAction principal" href="#"
+              >Réservez une table</a
+            >
+            <a class="bouton-appelAction principal" href="#"
+              >Commandez en ligne</a
+            >
           </div>
         </nav>
       </div>

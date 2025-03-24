@@ -1,0 +1,42 @@
+.conteneur-carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--rythme-base);
+  margin: var(--rythme-base);
+  margin-bottom: 0;
+}
+
+.conteneur-carte .carte-simple {
+  max-width: 300px;
+  padding: var(--rythme-base);
+  border: solid 1px var(--couleur-bordure);
+  border-radius: var(--arrondi-grand);
+}
+
+.conteneur-carte .carte-simple:hover {
+  border-color: var(--couleur-secondaire);
+}
+
+.conteneur-carte .carte-simple > a:hover {
+  text-decoration: underline;
+}
+
+.conteneur-carte .carte-simple img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Taille d'ecran superieur a 1450px */
+@media screen and (min-width: 1450px) {
+  .conteneur-carte .carte-simple {
+    max-width: 400px;
+  }
+}
+
+/* Taille d'ecran inferieur a 768px */
+@media screen and (max-width: 768px) {
+  .conteneur-carte .carte-simple {
+    max-width: 500px;
+  }
+}

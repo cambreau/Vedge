@@ -1,10 +1,11 @@
-@import url("bouton-lien.css");
-@import url("titre-logo.css");
 @import url("entete.css");
-@import url("carte.css");
-@import url("restaurants-plan.css");
+@import url("titre-logo.css");
+@import url("bouton-appelAction.css");
+@import url("recherche.css");
 @import url("fond-image.css");
-@import url("footer.css");
+@import url("conteneur-carte.css");
+@import url("restaurants-plan.css");
+@import url("bas-page.css");
 /* Variables CSS -----------------------  ==== ref = M.Charpentier*/
 :root {
   /* --- Espacement --- */
@@ -86,14 +87,13 @@ nav a:hover {
 /* Titre */
 h1 {
   font-size: var(--taille-police-gros);
-  font-weight: var(--epaisseur-police-gras);
+  font-weight: var(--epaisseur-police-tres-gras);
   line-height: var(--interligne-logo);
   text-transform: uppercase;
   transition: all;
 }
 
 h1:hover {
-  font-weight: var(--epaisseur-police-tres-gras);
   text-decoration: underline;
 }
 
@@ -109,6 +109,13 @@ h2 {
 h3 {
   font-size: var(--taille-police-moyen);
   margin: var(--rythme-serre) 0;
+}
+
+/*Autre*/
+
+.texte-accentuation {
+  font-size: var(--taille-police-moyen);
+  font-weight: var(--epaisseur-police-gras);
 }
 
 /* MAIN */

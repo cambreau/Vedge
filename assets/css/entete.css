@@ -1,5 +1,5 @@
 /*Header*/
-body > header {
+.entete{
   display: flex;
   background-color: var(--couleur-principale);
   padding: var(--rythme-base);
@@ -8,7 +8,7 @@ body > header {
 }
 
 /* Règle générale menu principal --------------------------------------------------------*/
-header > nav {
+.entete > nav {
   display: flex;
   flex-grow: 1; /* Repartition des elements du header */
   flex-direction: row;
@@ -22,11 +22,11 @@ header > nav {
 }
 
 /*------------------------------------------------------------------------------ */
-.sousMenu {
+.entete .sousMenu {
   position: relative;
 }
 
-header > nav div.sousMenu > div {
+.entete .sousMenu > div {
   display: none;
   position: absolute;
   padding: var(--rythme-base);
@@ -37,15 +37,22 @@ header > nav div.sousMenu > div {
   text-align: center;
 }
 
-header > nav div.sousMenu:hover > div {
+.entete .sousMenu:hover > div {
   display: flex;
   flex-direction: column;
   gap: var(--rythme-serre);
 }
 
+  /* Taille d'ecran inferieur a 1450px */
+@media screen and (min-width: 1170px) and (max-width: 1450px) {
+  .entete .recherche {
+      order: 1;
+  }
+}
+
 /* Taille d'ecran entre 1170px et 1450px */
 @media screen and (min-width: 1170px) and (max-width: 1450px) {
-  header > nav {
+  .entete > nav {
     flex-direction: column;
     align-items: stretch;
   }
@@ -59,7 +66,7 @@ header > nav div.sousMenu:hover > div {
     flex-grow: 1;
   }
 
-  header .menu-principal {
+  .entete .menu-principal {
     order: 4;
     border-top: 1px solid var(--couleur-bordure);
   }
@@ -67,7 +74,7 @@ header > nav div.sousMenu:hover > div {
 
 /* Taille d'ecran inferieur a 1170px */
 @media screen and (max-width: 1170px) {
-  body > header {
+  .entete {
     flex-direction: column;
     gap: 0;
     text-align: center;
@@ -75,16 +82,12 @@ header > nav div.sousMenu:hover > div {
     align-items: stretch;
   }
 
-  header > nav {
+  .entete > nav {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .titreLogo {
-    justify-content: center;
-  }
-
-  header > nav > div {
+  .entete > nav > div {
     flex-direction: column;
     gap: 0;
   }
@@ -93,21 +96,40 @@ header > nav div.sousMenu:hover > div {
     margin: 0;
   }
 
-  header .menu-principal {
+  .entete .menu-principal {
     border: none;
   }
 
   /* Gestion du sous-menu */
-  .sousMenu {
+  .entete .sousMenu {
     padding: var(--rythme-serre);
     border-top: 1px solid var(--couleur-texte);
   }
 
-  .fleche-deroulant {
+  .entete .sousMenu > div {
     display: none;
+    position: relative;
+  }
+}
+
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  .entete-action .bouton-appelAction {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid var(--couleur-texte);
   }
 
-  header > nav div.sousMenu:hover > div {
+  .entete-action .bouton-appelAction:hover {
+    background-color: var(--couleur-principale);
+    text-decoration: underline;
+  }
+
+  .entete .recherche {
     display: none;
   }
 }
+
+
+    

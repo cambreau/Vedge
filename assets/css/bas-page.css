@@ -1,4 +1,4 @@
-body > footer {
+.bas-page {
   background-color: var(--couleur-principale);
 }
 
@@ -8,44 +8,37 @@ body > footer {
   padding: var(--rythme-base);
   align-items: center;
 }
-.bas-page-conteneur > section > p {
-  margin: var(--rythme-serre) 0;
-}
 
-footer nav {
+.bas-page nav {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.menu-secondaire {
+.bas-page .menu-secondaire {
   align-content: center;
 }
 
-.menu-secondaire > a {
+.bas-page .menu-secondaire > a {
   margin: 0 var(--rythme-base);
 }
 
-.menu-secondaire :last-child {
+.bas-page .menu-secondaire :last-child {
   margin-right: 0;
 }
 
-footer nav > div {
+.bas-page nav > div {
   justify-content: end;
 }
 
-footer nav > div:first-child > a:first-child {
-  margin-left: 0;
-}
-
-.puce-bas-page {
+.bas-page .puce {
   display: none;
   width: 15px; /*  élément graphique */
   margin-right: var(--rythme-tres-serre);
 }
 
 /*droits-reserves*/
-.droits-reserves {
+.bas-page .droits-reserves {
   background: var(--couleur-texte);
   color: var(--couleur-fond);
   text-align: center;
@@ -64,30 +57,30 @@ footer nav > div:first-child > a:first-child {
   .bas-page-conteneur {
     flex-direction: column-reverse;
   }
-  .horaire {
+  .bas-page .horaire {
     text-align: center;
   }
 
-  footer nav > div {
+  .bas-page nav > div {
     flex-direction: column;
     gap: var(--rythme-serre);
     margin: var(--rythme-tres-serre) 0;
   }
 
-  .menu-secondaire > a {
+  .bas-page .menu-secondaire > a {
     display: block;
     margin: var(--rythme-tres-serre) var(--rythme-base);
   }
 
-  footer nav > div:first-child > a:first-child {
-    margin-left: 0;
+  .bas-page nav > div:first-child > a:first-child {
+    margin-left: 20px;
   }
 
-  footer nav > div > a {
+  .bas-page nav > div > a {
     margin-left: var(--rythme-base);
   }
 
-  .puce-bas-page {
+  .bas-page .puce {
     display: inline-block;
   }
 }

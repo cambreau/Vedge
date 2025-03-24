@@ -1,0 +1,40 @@
+/* Bouton Appel à l'action */
+/* Règles générales du bouton appel à l'action */
+.bouton-appelAction {
+  min-width: 250px;
+  display: inline-block;
+  text-align: center;
+  font-weight: var(--epaisseur-police-gras);
+  border-radius: var(--arrondi-grand);
+}
+.bouton-appelAction:hover {
+  background: var(--couleur-secondaire);
+  text-decoration: none;
+}
+
+/* Variant principal du bouton */
+.principal {
+  background: var(--couleur-fond);
+  padding: var(--rythme-serre);
+  border: thick double var(--couleur-secondaire);
+}
+
+/* Variant secondaire du bouton */
+.secondaire {
+  background: var(--couleur-principale);
+  padding: var(--rythme-serre) var(--rythme-base);
+  margin-top: var(--rythme-base);
+  border: solid var(--couleur-principale) 1px;
+}
+
+.secondaire:hover {
+  border: solid var(--couleur-texte) 1px;
+}
+
+/* Taille d'ecran inferieur a 1450px */
+@media screen and (min-width: 1170px) and (max-width: 1450px) {
+  .bouton-appelAction .principal {
+    flex-grow: 1;
+    order: 2;
+  }
+}

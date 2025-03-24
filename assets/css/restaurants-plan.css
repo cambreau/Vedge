@@ -8,26 +8,26 @@
   margin-bottom: 0;
 }
 
-.conteneur-restaurant-plan {
+.restaurant-plan-conteneur {
   display: flex;
   justify-content: center;
 }
 
 /* Carte interactive */
-.plan {
+.restaurants-plan .plan {
   background-color: var(--couleur-principale);
   padding: var(--rythme-base);
 }
 
-.plan h3 {
+.restaurants-plan .plan h3 {
   border-bottom: 1px solid var(--couleur-bordure);
 }
 
-.plan figure {
+.restaurants-plan .plan figure {
   margin-top: var(--rythme-base);
 }
 
-.plan input[type="text"] {
+.restaurants-plan .plan input[type="text"] {
   min-width: 250px;
 }
 
@@ -36,10 +36,10 @@
   .restaurants-plan h2 {
     margin-bottom: var(--rythme-base);
   }
-  .conteneur-restaurant-plan {
+  .restaurant-plan-conteneur {
     flex-wrap: wrap-reverse;
   }
-  .plan {
+  .restaurants-plan .plan {
     min-width: 600px;
     margin: auto;
   }
@@ -47,7 +47,7 @@
 
 /* Taille d'ecran inferieur a 768px */
 @media screen and (max-width: 768px) {
-  .plan {
+  .restaurants-plan .plan {
     min-width: auto;
   }
 }

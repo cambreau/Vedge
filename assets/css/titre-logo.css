@@ -1,7 +1,7 @@
 /* Choix d'un fichier spécifique pour le titre et le logo, car ce composant est utilisé à plusieurs endroits sur le site. */
 
 /*Titre principal & Logo */
-.titreLogo {
+.titre-logo {
   display: flex;
   flex-direction: row;
   background-color: var(--couleur-principale);
@@ -9,10 +9,13 @@
   gap: var(--rythme-serre);
 }
 
-.titreLogo img {
+.titre-logo img {
   width: 90px;
 }
 
-.titreLogo:hover {
-  background-color: var(--couleur-principale);
+/* Taille d'ecran inferieur a 1170px */
+@media screen and (max-width: 1170px) {
+  .titre-logo {
+    justify-content: center;
+  }
 }
