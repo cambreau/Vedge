@@ -9,7 +9,7 @@
 ✔ Correction effectuée : On a retiré les marges sur les paragraphes pour mettre en valeur le titre de la section. 
 
 - Méthode (CSS) : Ne limitez pas vos classes à certaines balises. 
-✔ Correction effectuée : (Voir: )  *********** s'il te plait Camille reste celle ci a faire car je ne suis pas sur , je ne veux pas écrire n'importe quoi ********
+✔ Correction effectuée : Nous avons soit mis ">" soit nommer la balise parent par une classe ou un id. (Voir : `assets/css/entete.css:129`)
 
 - Expérience utilisateur : attention à vos effets de survol. Ils ne devraient pas, 80% du temps, modifier les dimensions de vos éléments. Ça crée des dissonances visuelles.
 ✔ Correction effectuée : On a ajouté une bordure à l'état normal pour éviter tout déplacement au survol, assurant ainsi une interface plus fluide. (Voir : `assets/css/bouton-appelAction.css:27`) 
