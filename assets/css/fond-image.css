@@ -29,31 +29,54 @@
   border: none;
 }
 
-/* Variant secondaire : */
-.fond-image-secondaire {
+/* Variant texte centre */
+.fond-image-centre {
   display: inline-block;
   text-align: center;
   justify-items: center;
 }
 
-.fond-image-secondaire .boite {
+.fond-image-centre .boite {
   max-width: 650px;
 }
 
 /*Variant background */
-/** Publication principale - Accueil */
+/** Page accueil - Publication principale - Accueil */
 [id="fond-image-accueil"] {
   background-image: url("../image/accueil.jpg");
 }
 
-/** Publication promotion - Accueil */
+/** Page accueil - Publication promotion - Accueil */
 [id="fond-image-promotion"] {
   background-image: url("../image/promotion.png");
 }
 
-/** Publication votre restaurant - Accueil */
+/** Page accueil - Publication votre restaurant - Accueil */
 [id="fond-image-restaurant"] {
   background-image: url("../image/votre-restaurant.jpg");
+}
+
+/** Page Franchise Val JalBert - accueil */
+[id="fond-image-ValJalbert-accueil"] {
+  background-image: url("../image/valJalbert-accueil.jpg");
+}
+
+[id="fond-image-ValJalbert-accueil"] > .boite > section > * {
+  margin: var(--rythme-serre);
+}
+
+[id="fond-image-ValJalbert-accueil"] > .boite > :last-child {
+  border-top: solid 2px var(--couleur-secondaire);
+  margin-top: var(--rythme-base);
+  padding: var(--rythme-base) 0;
+}
+
+[id="fond-image-ValJalbert-accueil"] > .boite a {
+  text-decoration: underline;
+}
+
+[id="fond-image-ValJalbert-accueil"] > .boite a:hover {
+  font-weight: var(--epaisseur-police-tres-gras);
 }
 
 /* Taille d'ecran inferieur a 768px */
