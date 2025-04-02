@@ -79,6 +79,16 @@
   font-weight: var(--epaisseur-police-tres-gras);
 }
 
+/* Page franchise ValJalbert - promotion */
+[id="fond-image-ValJalbert-promotion"] {
+  background-image: url("../image/promotion-valJalbert.png");
+}
+
+/* Page franchise ValJalbert - reserver */
+[id="fond-image-ValJalbert-reserver"] {
+  background-image: url("../image/reserver-votre-table.jpg");
+}
+
 /* Taille d'ecran inferieur a 768px */
 @media screen and (max-width: 768px) {
   .fond-image {

@@ -5,6 +5,9 @@
 @import url("fond-image.css");
 @import url("conteneur-carte.css");
 @import url("restaurants-plan.css");
+@import url("article-colonne.css");
+@import url("avis-clients.css");
+@import url("gallerie-photo.css");
 @import url("bas-page.css");
 /* Variables CSS -----------------------  ==== ref = M.Charpentier*/
 :root {
@@ -26,7 +29,9 @@
   --interligne-logo: 1.78em;
   /* --- Police --- */
   --police-general: "Lora", sans-serif;
+  --police-decorative: "Lora", italic;
   /* --- Taille de police --- */
+  --taille-police-petit: 0.9rem;
   --taille-police-normal: 1rem;
   --taille-police-moyen: 1.2rem;
   --taille-police-grand: 1.8rem;
@@ -104,6 +109,12 @@ h2 {
   font-size: var(--taille-police-grand);
   font-weight: var(--epaisseur-police-tres-gras);
   line-height: var(--interligne-grand);
+}
+
+h2 > span {
+  font-size: var(--taille-police-moyen);
+  margin-left: var(--rythme-base);
+  font-weight: var(--epaisseur-police-gras);
 }
 
 h3 {

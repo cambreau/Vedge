@@ -12,6 +12,15 @@
   text-decoration: none;
 }
 
+.bouton-appelAction-conteneur {
+  /* Utiliser au besoin */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--rythme-base);
+  margin: var(--rythme-espace) var(--rythme-base);
+}
+
 /* Variant principal du bouton */
 .principal {
   background: var(--couleur-fond);
@@ -29,6 +38,18 @@
 
 .secondaire:hover {
   border: solid var(--couleur-texte) 1px;
+}
+
+/* Variant troisieme */
+.troisieme {
+  align-content: center;
+  width: 300px;
+  height: 140px;
+  border: thick double var(--couleur-secondaire);
+}
+
+.troisieme p {
+  font-size: var(--taille-police-petit);
 }
 
 /* Taille d'ecran inferieur a 1450px */

@@ -1,0 +1,26 @@
+.avis-clients-conteneur {
+  display: flex;
+  flex-direction: row;
+  padding: var(--rythme-base);
+  gap: var(--rythme-espace);
+}
+
+.avis-clients-conteneur img {
+  height: 50px;
+  object-fit: cover;
+}
+
+.avis-client {
+  margin-bottom: var(--rythme-espace);
+}
+
+.avis-client-texte {
+  text-align: justify;
+  font-style: italic;
+  font-weight: var(--epaisseur-police-gras);
+}
+
+.avis-client-auteur {
+  font-weight: var(--epaisseur-police-tres-gras);
+  margin-top: var(--rythme-serre);
+}
