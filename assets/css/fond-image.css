@@ -89,6 +89,10 @@
   background-image: url("../image/reserver-votre-table.jpg");
 }
 
+[id="fond-image-philosophie"] {
+  background-image: url("../image/philosophie.jpg");
+}
+
 /* Taille d'ecran inferieur a 768px */
 @media screen and (max-width: 768px) {
   .fond-image {

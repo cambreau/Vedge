@@ -43,8 +43,20 @@
 
 .article-colonne .bouton-appelAction {
   width: 250px;
-  margin: var(--rythme-espace) var(--rythme-base);
+  margin: var(--rythme-base) var(--rythme-base);
 }
+
+.philosophie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.philosophie .bouton-appelAction {
+  margin-left : 0;
+}
+
+
 
 @media screen and (max-width: 1170px) {
   .article-colonne {
