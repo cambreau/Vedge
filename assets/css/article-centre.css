@@ -1,0 +1,17 @@
+.article-centre-conteneur {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center; /*Valider */
+  justify-items: center; /*Valider */
+  margin-bottom: var(--rythme-base);
+  text-align: justify;
+}
+
+.article-centre-conteneur img {
+  width: 100px;
+  margin-left: var(--rythme-base);
+}
+
+.article-centre-conteneur p {
+  margin-top: var(--rythme-serre);
+}

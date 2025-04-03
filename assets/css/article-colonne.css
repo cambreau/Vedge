@@ -1,10 +1,3 @@
-.article-colonne-conteneur {
-  margin-bottom: var(--rythme-base);
-}
-.article-colonne-conteneur h2 {
-  margin-bottom: 0;
-}
-
 .article-colonne {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -12,8 +5,7 @@
 
 .article-colonne-texte-contenu {
   text-align: justify;
-  margin: var(--rythme-base);
-  margin-left: 0;
+  margin: var(--rythme-base) var(--rythme-espace) 0 0;
 }
 
 .article-colonne-texte-contenu > * {
@@ -28,11 +20,13 @@
 }
 
 .article-colonne li img {
+  /* puce */
   width: 20px;
   margin-right: var(--rythme-tres-serre);
 }
+
 .article-colonne picture {
-  max-height: 450px;
+  max-height: 400px;
   overflow: hidden;
 }
 .article-colonne picture img {
@@ -41,22 +35,14 @@
   object-fit: cover;
 }
 
+.article-colonne .bouton-appelAction-conteneur {
+  margin-bottom: 0;
+  justify-content: start;
+}
+
 .article-colonne .bouton-appelAction {
   width: 250px;
-  margin: var(--rythme-base) var(--rythme-base);
 }
-
-.philosophie {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-}
-
-.philosophie .bouton-appelAction {
-  margin-left : 0;
-}
-
-
 
 @media screen and (max-width: 1170px) {
   .article-colonne {

@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/general.css" />
-    <title>Vedge : Restaurant Végane</title>
+    <title>Notre philosophie: Restaurant Végane</title>
   </head>
   <body>
     <!-- navigation =================================================================================================-->
@@ -79,37 +79,88 @@
       </nav>
     </header>
     <main>
+      <!-- section 1 : Accueil philosophie =================================================================-->
       <section class="fond-image fond-image-centre" id="fond-image-philosophie">
         <div class="boite">
           <header>
             <h2>Bon au goût, bon pour la nature.</h2>
           </header>
         </div>
-        <a class="bouton-appelAction secondaire" href="#">Lisez le manifeste Vedge</a>
+        <a class="bouton-appelAction secondaire" href="#"
+          >Lisez le manifeste Vedge</a
+        >
       </section>
-
-      <section>
+      <!-- section 2 : Notre Philosophie =================================================================-->
+      <section class="article-colonne-conteneur">
         <header>
           <h2>Notre philosophie</h2>
         </header>
-        <div class="article-colonne">
-            <section class="philosophie">
-              <header>
-                <h3>Cuisine artisanale</h3>
-              </header>
-              <p>
-                Nous connaissons chaque ingrédient qui entre dans la composition de nos recettes. Nous créons la plupart de nos recettes à partir de rien — rien que des ingrédients naturels, frais et savoureux. Voilà qui fait la vraie beauté de notre cuisine!
-              </p>
-              <a class="bouton-appelAction secondaire">En savoir plus</a>
-            </section>
-          <picture><img src="./assets/image/cuisine-artisanale.jpg" /></picture>
+        <div class="article-centre-conteneur">
+          <section>
+            <header>
+              <h3>Cuisine artisanale</h3>
+            </header>
+            <p>
+              Nous connaissons chaque ingrédient qui entre dans la composition
+              de nos recettes. Nous créons la plupart de nos recettes à partir
+              de rien — rien que des ingrédients naturels, frais et savoureux.
+              Voilà qui fait la vraie beauté de notre cuisine!
+            </p>
+          </section>
+          <picture><img src="./assets/image/cuisine-artisanale.png" /></picture>
+        </div>
+        <div class="article-centre-conteneur">
+          <section>
+            <header>
+              <h3>Botanique et décadent</h3>
+            </header>
+            <p>
+              Le concept de « Vedge » s’inscrit dans la vision de
+              l’alimentation. Il reflète notre volonté de ralentir la cadence,
+              d’offrir des plats sains à une clientèle soucieuse de son
+              bien-être et de l’environnement. Une clientèle hédoniste qui mange
+              avec plaisir et de façon responsable.
+            </p>
+          </section>
+          <picture><img src="./assets/image/botanique.png" /></picture>
+        </div>
+        <div class="article-centre-conteneur">
+          <section>
+            <header>
+              <h3>Écoresponsabilité</h3>
+            </header>
+            <p>
+              Amants de la nature, nous prônons le respect de la faune et de la
+              flore. C’est pourquoi notre salle à manger et notre cuisine
+              respectent les standards de la pensée écoresponsable.
+            </p>
+          </section>
+          <picture><img src="./assets/image/ecoresponsabilite.png" /></picture>
+        </div>
+        <div class="article-centre-conteneur">
+          <section>
+            <header>
+              <h3>Fournisseurs locaux</h3>
+            </header>
+            <p>
+              Nous nous approvisionnons auprès d’artisans locaux, car nous
+              estimons qu’une bonne cuisine dépend de la qualité de ses
+              ingrédients. Moins nos ingrédients voyagent, plus nous pouvons
+              offrir à nos clients des plats qui se distinguent par leur
+              fraîcheur, leur authenticité et leur qualité. Le tout, en
+              réduisant notre empreinte écologique et nos émissions de gaz
+              carbonique.
+            </p>
+          </section>
+          <picture><img src="./assets/image/fournisseur.png" /></picture>
         </div>
       </section>
-      
+      <!-- section 3 : Restaurant vedette =================================================================-->
       <section class="restaurants-plan">
         <header>
           <h2>Restaurants en vedette</h2>
         </header>
+        <div class="restaurant-plan-conteneur">
           <div class="conteneur-carte">
             <section class="carte-simple">
               <h3>Trois-Rivières</h3>
@@ -166,84 +217,112 @@
               </a>
             </section>
           </div>
+          <section class="plan">
+            <header>
+              <h3>Trouvez un restaurant "Vedge" près de chez vous.</h3>
+            </header>
+            <form class="recherche" method="get">
+              <label for="trouver"
+                >Entrez votre ville ou votre code postal</label
+              >
+              <div class="recherche-barre">
+                <input
+                  name="trouver"
+                  type="text"
+                  id="trouver"
+                  placeholder="Entrez votre ville ou votre code postal"
+                />
+                <button type="submit">Trouver</button>
+              </div>
+            </form>
+            <!-- Iframe pour Google plans -->
+            <figure class="conteneur-plan">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223469.45138822172!2d-73.9723771579288!3d45.55825567122121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a43a352df5b%3A0x69b2b7fb6c020d9e!2sMontr%C3%A9al%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000"
+                title="Carte interactive de Montréal"
+              >
+              </iframe>
+            </figure>
+          </section>
+        </div>
       </section>
     </main>
     <!-- FOOTER ========================================================================-->
     <footer class="bas-page">
-        <div class="bas-page-conteneur">
-          <section class="horaire">
-            <h3>Heure d'ouverture</h3>
-            <p>Lundi à Mercredi 11:30 - 22:00</p>
-            <p>Jeudi à Samedi 11:30 - 23:00</p>
-            <p>Dimanche : 10:00 - 22:00</p>
-          </section>
-          <nav>
+      <div class="bas-page-conteneur">
+        <section class="horaire">
+          <h3>Heure d'ouverture</h3>
+          <p>Lundi à Mercredi 11:30 - 22:00</p>
+          <p>Jeudi à Samedi 11:30 - 23:00</p>
+          <p>Dimanche : 10:00 - 22:00</p>
+        </section>
+        <nav>
+          <div>
             <div>
-              <div>
-                <a class="titre-logo" href="index.html">
-                  <img
-                    src="./assets/image/logo-vedge.png"
-                    alt="Logo du restaurant Vedge"
-                  />
-                  <h1>Vedge</h1>
-                </a>
-              </div>
-              <div class="menu-secondaire">
-                <a href="./notre-philosophie.html">
-                  <img
-                    class="puce"
-                    src="./assets/image/fleur.png"
-                    alt="fleur jaune"
-                  />
-                  Notre philosophie
-                </a>
-                <a href="#">
-                  <img
-                    class="puce"
-                    src="./assets/image/fleur.png"
-                    alt="fleur jaune"
-                  />
-                  Carrières
-                </a>
-                <a href="#">
-                  <img
-                    class="puce"
-                    src="./assets/image/fleur.png"
-                    alt="fleur jaune"
-                  />
-                  Franchises
-                </a>
-                <a href="#">
-                  <img
-                    class="puce"
-                    src="./assets/image/fleur.png"
-                    alt="fleur jaune"
-                  />
-                  Presse
-                </a>
-                <a href="#">
-                  <img
-                    class="puce"
-                    src="./assets/image/fleur.png"
-                    alt="fleur jaune"
-                  />
-                  Contactez-nous
-                </a>
-              </div>
+              <a class="titre-logo" href="index.html">
+                <img
+                  src="./assets/image/logo-vedge.png"
+                  alt="Logo du restaurant Vedge"
+                />
+                <h1>Vedge</h1>
+              </a>
             </div>
-            <div>
-              <a class="bouton-appelAction principal" href="#"
-                >Réservez une table</a
-              >
-              <a class="bouton-appelAction principal" href="#"
-                >Commandez en ligne</a
-              >
+            <div class="menu-secondaire">
+              <a href="./notre-philosophie.html">
+                <img
+                  class="puce"
+                  src="./assets/image/fleur.png"
+                  alt="fleur jaune"
+                />
+                Notre philosophie
+              </a>
+              <a href="#">
+                <img
+                  class="puce"
+                  src="./assets/image/fleur.png"
+                  alt="fleur jaune"
+                />
+                Carrières
+              </a>
+              <a href="#">
+                <img
+                  class="puce"
+                  src="./assets/image/fleur.png"
+                  alt="fleur jaune"
+                />
+                Franchises
+              </a>
+              <a href="#">
+                <img
+                  class="puce"
+                  src="./assets/image/fleur.png"
+                  alt="fleur jaune"
+                />
+                Presse
+              </a>
+              <a href="#">
+                <img
+                  class="puce"
+                  src="./assets/image/fleur.png"
+                  alt="fleur jaune"
+                />
+                Contactez-nous
+              </a>
             </div>
-          </nav>
-        </div>
-        <div class="droits-reserves">
-          <p>Tous droits réservés &copy; 2022 Vedge : Restaurant Végane</p>
-        </div>
-      </footer>
-    </body>
-  </html>
+          </div>
+          <div>
+            <a class="bouton-appelAction principal" href="#"
+              >Réservez une table</a
+            >
+            <a class="bouton-appelAction principal" href="#"
+              >Commandez en ligne</a
+            >
+          </div>
+        </nav>
+      </div>
+      <div class="droits-reserves">
+        <p>Tous droits réservés &copy; 2022 Vedge : Restaurant Végane</p>
+      </div>
+    </footer>
+  </body>
+</html>
