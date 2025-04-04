@@ -14,9 +14,7 @@
   padding: var(--rythme-tres-serre);
   border: 1px solid var(--couleur-bordure);
   border-radius: var(--arrondi-petit) 0 0 var(--arrondi-petit);
-  margin-bottom: var(
-    --rythme-tres-serre
-  ); /* Pour avoir un meilleur alignement dans le header. */
+  margin-bottom: var(--rythme-tres-serre); /* Pour avoir un meilleur alignement dans le header. */
 }
 
 .recherche-barre > input[type="submit"],

@@ -4,7 +4,7 @@
 }
 
 .article-colonne-texte-contenu {
-  text-align: justify;
+  text-align: justify;  /* dans le wave ca se voit comme avertisement */
   margin: var(--rythme-base) var(--rythme-espace) 0 0;
 }
 
@@ -19,7 +19,7 @@
   margin: var(--rythme-serre) var(--rythme-base);
 }
 
-.article-colonne li img {
+.article-colonne .puce {
   /* puce */
   width: 20px;
   margin-right: var(--rythme-tres-serre);
@@ -29,6 +29,7 @@
   max-height: 400px;
   overflow: hidden;
 }
+
 .article-colonne picture img {
   width: 100%;
   height: 100%;
@@ -54,5 +55,11 @@
   .article-colonne .bouton-appelAction {
     width: 250px;
     margin: var(--rythme-serre);
+  }
+}
+
+@media screen and (max-width: 768px ) {
+  .article-colonne .bouton-appelAction-conteneur {
+    justify-content: center;
   }
 }

@@ -1,0 +1,21 @@
+.article-philosphie {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  /*justify-content: center;   celle ci sert a rien */
+  margin-bottom: var(--rythme-base);
+ /* text-align: justify; */ /* celle ci si on la garde avec le wave ca sonne comme avertissement a toi de voir si on la garde */
+}
+
+.article-philosphie picture {
+  justify-self: center;
+}
+
+.article-philosphie img {
+  width: 100px;
+  margin-left: var(--rythme-base);
+}
+
+.article-philosphie p {
+  margin-top: var(--rythme-serre);
+}
