@@ -1,0 +1,64 @@
+/=========================      Pour la page < Franchise VAL-JALBERT >     ============================/
+
+1. Photo d’accueil avec adresse et heures d’ouverture
+   --> On commence par l’essentiel : où et quand visiter le restaurant. C’est une accroche rapide, utile pour les visiteurs pressés. Cela établit immédiatement le contexte et rend l'expérience concrète.
+
+2. Avis clients
+   --> Juste après l’info pratique, on renforce la confiance avec des témoignages enthousiastes. Cela crédibilise l’établissement et donne envie de vivre cette expérience positive à son tour.
+
+3. Menu & Galerie photo
+   --> Une fois séduit par les avis, l’utilisateur veut savoir ce qu’il va manger. Présenter les menus accompagnés de belles images stimule l'appétit et permet de se projeter facilement dans l’expérience.
+
+4. Promotions
+   --> Une fois que l’intérêt est éveillé par les plats, on ajoute un incitatif : une promo attrayante pour renforcer la motivation à venir au restaurant. C’est une stratégie persuasive, qui crée un sentiment d’urgence.
+
+5. Groupes de 9 personnes et plus
+   --> Justification : Les infos pour groupes arrivent naturellement après l’intérêt individuel. On s’adresse ici à ceux qui veulent venir entre amis, collègues, ou en famille. L’information est claire et complète avec les conditions et le menu dédié.
+
+6. Réservation
+  --> Justification : On termine avec un appel à l’action fort. Maintenant que l’utilisateur a toutes les infos, il est temps de passer à l’acte. Placer la réservation à la fin permet de tout lire puis réserver sans retourner en arrière.
+
+
+/=========================        Pour la page < Notre-philosophie >      ============================/
+
+"Bon au goût, bon pour la nature" en première position : L’introduction avec ce slogan fort capte immédiatement l’attention du visiteur. C’est l’accroche idéale pour poser l’identité de Vedge dès le départ, tout en créant un impact émotionnel. Une première impression qui marque !
+
+"Notre Philosophie" juste après le slogan : Après avoir accroché l’utilisateur avec le slogan, on enchaîne directement avec les valeurs fondatrices de Vedge. Ça donne du sens à ce qu’on vient de lire, en montrant ce qui rend la marque unique.
+ --> Les valeurs clés dans "Notre Philosophie"
+Botanique et décadent, Cuisine artisanale, Écoresponsabilité, Fournisseurs locaux : Plutôt que de les disperser, on les développe ici, là où on parle en profondeur de l’identité de Vedge.
+
+Pourquoi de petites icônes dans "Notre Philosophie" ?
+Contrairement aux autres pages riches en visuels, nous avons choisi des icônes sobres pour recentrer l’attention sur le texte. Cela permet de mieux faire passer les valeurs de Vedge et d’offrir une pause visuelle dans l’expérience utilisateur, marquant cette section comme un moment de réflexion.
+
+"Restaurants en vedette" après "Notre Philosophie" : On a réuni l’inspiration (restaurants en vedette) et l’action (recherche) dans une seule section pour que l’utilisateur ait tout sous les yeux. À gauche, il découvre des restos populaires. À droite, il peut agir vite en cherchant près de chez lui.
+--> Ce que ça apporte : C’est simple, logique et efficace. Le regard passe naturellement de la découverte à l’action. Pas besoin de scroller ou chercher une autre section. On gagne en fluidité, en clarté et en impact.
+
+
+
+/ ============================ Modifications ============================/
+
+1) j'ai ajouté dans  "article-philosophie" ligne 9 cette règle , la raison que dans la grande taille d'écran la section "Écoresponsabilité" est décalé a droite  
+
+.article-philosphie picture {
+  justify-self: center;
+}
+
+2) j'ai mis en commentaire dans " article-philosophie"  ligne 5 et 7 pour valider avec toi 
+
+3 ) j'ai ajouté une photo pour le plat-3 , regarde si c'Est bien ou on cherche une autre image
+
+4) j'ai ajouté dans "article-colonne" dans la ligne 60  pour que les boutons seront au centre pour avoir le meme visuel dans toute la page   /* a toi de valider*/
+
+@media screen and (max-width: 768px ) {
+  .article-colonne .bouton-appelAction-conteneur {
+    justify-content: center;
+  }
+}
+
+nous reste seulement d'ajouter 2 phrases pour le WAVE ET W3C dans ce fichier et aussi voir si tu veux qu'on ajoute d'autre arguments pour l'appréciation.
+
+
+
+
+
+
