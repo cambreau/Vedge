@@ -2,9 +2,8 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
   align-items: center;
-  /*justify-content: center;   celle ci sert a rien */
   margin-bottom: var(--rythme-base);
- /* text-align: justify; */ /* celle ci si on la garde avec le wave ca sonne comme avertissement a toi de voir si on la garde */
+  text-align: justify;
 }
 
 .article-philosphie picture {

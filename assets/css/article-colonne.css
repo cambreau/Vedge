@@ -4,7 +4,7 @@
 }
 
 .article-colonne-texte-contenu {
-  text-align: justify;  /* dans le wave ca se voit comme avertisement */
+  text-align: justify;
   margin: var(--rythme-base) var(--rythme-espace) 0 0;
 }
 
@@ -20,7 +20,6 @@
 }
 
 .article-colonne .puce {
-  /* puce */
   width: 20px;
   margin-right: var(--rythme-tres-serre);
 }
@@ -45,6 +44,7 @@
   width: 250px;
 }
 
+/* Taille d'ecran inferieur a 1170px */
 @media screen and (max-width: 1170px) {
   .article-colonne {
     display: flex;
@@ -58,7 +58,8 @@
   }
 }
 
-@media screen and (max-width: 768px ) {
+/* Taille d'ecran inferieur a 768px */
+@media screen and (max-width: 768px) {
   .article-colonne .bouton-appelAction-conteneur {
     justify-content: center;
   }

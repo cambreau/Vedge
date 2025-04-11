@@ -35,30 +35,6 @@ Contrairement aux autres pages riches en visuels, nous avons choisi des icônes 
 
 
 
-/ ============================ Modifications ============================/
-
-1) j'ai ajouté dans  "article-philosophie" ligne 9 cette règle , la raison que dans la grande taille d'écran la section "Écoresponsabilité" est décalé a droite  
-
-.article-philosphie picture {
-  justify-self: center;
-}
-
-2) j'ai mis en commentaire dans " article-philosophie"  ligne 5 et 7 pour valider avec toi 
-
-3 ) j'ai ajouté une photo pour le plat-3 , regarde si c'Est bien ou on cherche une autre image
-
-4) j'ai ajouté dans "article-colonne" dans la ligne 60  pour que les boutons seront au centre pour avoir le meme visuel dans toute la page   /* a toi de valider*/
-
-@media screen and (max-width: 768px ) {
-  .article-colonne .bouton-appelAction-conteneur {
-    justify-content: center;
-  }
-}
-
-nous reste seulement d'ajouter 2 phrases pour le WAVE ET W3C dans ce fichier et aussi voir si tu veux qu'on ajoute d'autre arguments pour l'appréciation.
-
-
-
 
 
 
