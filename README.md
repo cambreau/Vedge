@@ -1,4 +1,4 @@
-# Titre: Restaurant Vedge 
+# Titre: Restaurant Vedge (Sujet d'etude, H25-58221WMA-24632 Création et design de site Web)
 
 ## Contexte: 
 Le projet consiste en la création du site web d’un restaurant vegan, avec une navigation simple et intuitive. 
@@ -9,4 +9,8 @@ Le site comprend :
 
 ## Auteur:
 Loubna Souiba et Camille Breau 
+
+## Lien: 
+https://cambreau.github.io/Vedge/
+
 
